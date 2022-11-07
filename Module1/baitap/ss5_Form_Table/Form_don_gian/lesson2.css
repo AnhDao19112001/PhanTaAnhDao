@@ -1,0 +1,15 @@
+table{
+    text-align: left;
+    background-color: white;
+}
+.Between{
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+body{
+    background-color: lightskyblue;
+}
+.Interests{
+    color: darkorange;
+}

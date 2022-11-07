@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lesson3</title>
+  <meta charset="UTF-8">
+  <style>
+    h4 {
+      margin: 15px 0 0 0;
+    }
+    #age-range-input, #income-range-input {
+      width: 50%;
+      font-size: 120%;
+    }
+    .input-form {
+      margin-top: 10px;
+    }
+    .gender-input-text {
+      display: block;
+      margin-left: 25px;
+    }
+    .pay-product {
+      background-color: #fff;
+    }
+    .product-input {
+      margin-top: 12px;
+    }
+    #comments-input {
+      width: 100%;
+      height: 150px;
+    }
+    .rate-table, th {
+      border: 1px solid;
+      border-collapse: collapse ;
+    }
+    .rate-table tr:nth-child(odd) {
+      background-color: #ddd;
+    }
+    .head-rate {
+      width: 150px;
+    }
+    .head-left {
+      text-align: left;
+    }
+    .submit-btn {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+<form action="" method="post">
+  <div id="heading-section">
+    <h1>Market Research Survey</h1>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+  </div>
+  <div id="age-section">
+    <h4>What is your age range?</h4>
+    <select id="age-range-input">
+      <option value="">18-24</option>
+      <option value="">25-34</option>
+      <option value="">35-50</option>
+      <option value="">50+</option>
+    </select>
+  </div>
+  <div id="income-section">
+    <h4>What is your yearly income range?</h4>
+    <select id="income-range-input">
+      <option value="">$0 - $25,000</option>
+      <option value="">$25,001 - $50,000</option>
+      <option value="">$50,001 - $100,000</option>
+      <option value="">$100,000+</option>
+    </select>
+  </div>
+  <div id="gender-section">
+    <h4>Gender Identity</h4>
+    <input type="radio" id="gender" name="Identity">
+    <label for="gender">Male</label><br>
+    <input type="radio" id="gender1" name="Identity">
+    <label for="gender1">Famle</label><br>
+    <input type="radio" id="gender2" name="Identity">
+    <label for="gender2">Nonbinary</label><br>
+    <input type="radio" id="gender3" name="Identity">
+    <label for="gender3">Other</label><br>
+  </div>
+  <div id="product-purchased-section">
+    <h4>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h4>
+    <div>
+      <input type="checkbox" id="products">
+      <label for="products">Products 1</label><br>
+      <input type="checkbox" id="products2">
+      <label for="products2">Products 2</label><br>
+      <input type="checkbox" id="products3">
+      <label for="products3">Products 3</label>
+    </div>
+  </div>
+  <div id="time-new-product">
+    <h4>How often would you use our new product?</h4>
+    <input type="radio" name="use" id="use">
+    <label for="use">Daily</label><br>
+    <input type="radio" name="use" id="use1">
+    <label for="use1">Weekly</label><br>
+    <input type="radio" name="use" id="use2">
+    <label for="use2">Monthly</label>
+  </div>
+  <div id="pay-new-product">
+    <h4>What would you pay for the new product?</h4>
+    <table class="pay-product">
+      <tr>
+        <td style="vertical-align: top;">$</td>
+        <td>
+          <input type="text" name="dollars" id="money-input"> <br>
+          <sub><label for="money-input">Dollars</label></sub>
+        </td>
+        <td style="vertical-align: top;">.</td>
+        <td>
+          <input type="text" name="cents" id="unit-input"> <br>
+          <sub><label for="unit-input">Cents</label></sub>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div id="expected-features-section">
+    <h4><label for="comments-input">What features would you like to see in the new product.</label></h4>
+    <input type="text" name="comments" id="comments-input">
+  </div>
+  <div id="agreement-rate">
+    <p>Please rate your level of agreement with the following statements</p>
+    <table class="rate-table">
+      <tr>
+        <th></th>
+        <th class="head-rate">Strongly Disagree</th>
+        <th class="head-rate">Disagree</th>
+        <th class="head-rate">Agree</th>
+        <th class="head-rate">Strongly Agree</th>
+      </tr>
+      <tr>
+        <th class="head-left">Our products are priced fairly</th>
+        <th>
+          <div>
+            <input type="radio" name="rate-price" id="1">
+          </div>
+          <label for="1">1</label>
+        </th>
+        <th>
+          <div>
+            <input type="radio" name="rate-price" id="2">
+          </div>
+          <label for="2">2</label>
+        </th>
+        <th>
+          <div>
+            <input type="radio" name="rate-price" id="3">
+          </div>
+          <label for="3">3</label>
+        </th>
+        <th>
+          <div>
+            <input type="radio" name="rate-price" id="4">
+          </div>
+          <label for="4">4</label>
+        </th>
+      </tr>
+      <tr>
+        <th class="head-left">Our products are high quality</th>
+        <th>
+          <div>
+            <input type="radio" name="rate-quality" id="1'">
+          </div>
+          <label for="1'">1</label>
+        </th>
+        <th>
+          <div>
+            <input type="radio" name="rate-quality" id="2'">
+          </div>
+          <label for="2'">2</label>
+        </th>
+        <th>
+          <div>
+            <input type="radio" name="rate-quality" id="3'">
+          </div>
+          <label for="3'">3</label>
+        </th>
+        <th>
+          <div>
+            <input type="radio" name="rate-quality" id="4'">
+          </div>
+          <label for="4'">4</label>
+        </th>
+      </tr>
+      <tr>
+        <th class="head-left">You would recommend our product to a friend or coworker.</th>
+        <th>
+          <div>
+            <input type="radio" name="recommend" id="1''">
+          </div>
+          <label for="1''">1</label>
+        </th>
+        <th>
+          <div>
+            <input type="radio" name="recommend" id="2''">
+          </div>
+          <label for="2''">2</label>
+        </th>
+        <th>
+          <div>
+            <input type="radio" name="recommend" id="3''">
+          </div>
+          <label for="3''">3</label>
+        </th>
+        <th>
+          <div>
+            <input type="radio" name="recommend" id="4''">
+          </div>
+          <label for="4''">4</label>
+        </th>
+      </tr>
+    </table>
+  </div>
+  <input type="submit" value="Submit" class="submit-btn">
+</form>
+</body>
+</html>
