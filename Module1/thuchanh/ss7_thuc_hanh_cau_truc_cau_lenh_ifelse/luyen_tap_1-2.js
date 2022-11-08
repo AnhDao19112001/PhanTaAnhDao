@@ -1,9 +1,15 @@
-let a;
-a= +prompt('nhap so tuoi');
-a= parseInt(a);
-if (a >= 16){
-    document.write('Học sinh đủ tuổi vào lop 10');
-}else if (a << 16){
-    document.write('Hoc sinh khong du tuoi vao lop 10');
+let a, b;
+ a= +prompt('nhap a');
+ b= +prompt('nhap b');
+
+ a= parseInt(a);
+ b= parseInt(b);
+
+ if(a % b == 0){
+     document.write('a chia het cho b');
+}else{
+     document.write('a khong chia het cho b');
 }
+
+
 
