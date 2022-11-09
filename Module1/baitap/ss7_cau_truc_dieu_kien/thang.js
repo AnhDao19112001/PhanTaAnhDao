@@ -36,3 +36,4 @@ function check_month() {
             document.getElementById("result").innerHTML = "Vui lòng nhập lại tháng"
     }
 }
+//placeholder="Nhập tháng" style="width:10%">
