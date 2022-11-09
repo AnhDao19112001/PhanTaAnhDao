@@ -20,11 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d43e425-686e-4dd5-8bc9-b89a8a384a41" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../baitap/ss7_cau_truc_dieu_kien/demo nhap thang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../baitap/ss7_cau_truc_dieu_kien/chi_so_can_nang.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../baitap/ss7_cau_truc_dieu_kien/chi_so_can_nang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../baitap/ss7_cau_truc_dieu_kien/thang.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../baitap/ss7_cau_truc_dieu_kien/thang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../baitap/ss8_cau_tru_dieu_kien2/dien_tich_hinh_chu_nhat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../baitap/ss8_cau_tru_dieu_kien2/dien_tich_hinh_vuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../baitap/ss8_cau_tru_dieu_kien2/dien_tich_hinh_vuong.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../baitap/ss8_cau_tru_dieu_kien2/dien_tich_tam_giac_vuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../baitap/ss8_cau_tru_dieu_kien2/dien_tich_tam_giac_vuong.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../baitap/ss8_cau_tru_dieu_kien2/giai_phuong_trinh_bac_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../baitap/ss8_cau_tru_dieu_kien2/giai_phuong_trinh_bac_1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luyen_tap_1-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/luyen_tap_1-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luyen_tap_1-6.js" beforeDir="false" afterPath="$PROJECT_DIR$/luyen_tap_1-6.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +83,8 @@
       <workItem from="1667976596624" duration="946000" />
       <workItem from="1667978610645" duration="13000" />
       <workItem from="1667978625232" duration="18000" />
-      <workItem from="1667980980961" duration="1502000" />
+      <workItem from="1667980980961" duration="3572000" />
+      <workItem from="1667994328211" duration="641000" />
     </task>
     <servers />
   </component>
@@ -99,9 +104,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1667981511170">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1667994370532">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1667981511170" />
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1667994370532" />
   </component>
 </project>
