@@ -11,20 +11,6 @@ let thang_10 = "10";
 let thang_11 = "11";
 let thang_12 = "12";
 
-// function check_month() {
-//     let month = document.getElementById("month").value; //'12'
-//     if (month == thang_1 || month == thang_3 || month == thang_5 || month == thang_7 || month == thang_8 || month == thang_10 || month == thang_12) {
-//         document.getElementById("result").innerHTML = "Tháng " + month + " có 31 ngày"
-//     } else if (month == thang_4 || month == thang_6 || month == thang_9 || month == thang_11) {
-//         document.getElementById("result").innerHTML = "Tháng " + month + " có 30 ngày"
-//     } else if (month == thang_2) {
-//         document.getElementById("result").innerHTML = "Tháng " + month + " có 28 hoặc 29 ngày"
-//     } else {
-//         document.getElementById("result").innerHTML = "Vui lòng nhập lại tháng"
-//     }
-// }
-
-
 function check_month() {
     let month = document.getElementById("month").value;
     switch (month) {
