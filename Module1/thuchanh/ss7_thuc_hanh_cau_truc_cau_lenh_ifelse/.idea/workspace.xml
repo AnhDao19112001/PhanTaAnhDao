@@ -20,9 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d43e425-686e-4dd5-8bc9-b89a8a384a41" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../baitap/ss7_cau_truc_dieu_kien/demo nhap thang.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../baitap/ss7_cau_truc_dieu_kien/chi_so_can_nang.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../baitap/ss7_cau_truc_dieu_kien/chi_so_can_nang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../baitap/ss7_cau_truc_dieu_kien/chi_so_can_nang.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../baitap/ss7_cau_truc_dieu_kien/chi_so_can_nang.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../baitap/ss7_cau_truc_dieu_kien/thang.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../baitap/ss7_cau_truc_dieu_kien/thang.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luyen_tap_1-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/luyen_tap_1-2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +76,10 @@
       <updated>1667916827783</updated>
       <workItem from="1667916829003" duration="5180000" />
       <workItem from="1667964970765" duration="674000" />
-      <workItem from="1667976596624" duration="944000" />
+      <workItem from="1667976596624" duration="946000" />
+      <workItem from="1667978610645" duration="13000" />
+      <workItem from="1667978625232" duration="18000" />
+      <workItem from="1667980980961" duration="1502000" />
     </task>
     <servers />
   </component>
@@ -94,9 +99,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1667976944731">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1667981511170">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1667976944731" />
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1667981511170" />
   </component>
 </project>
