@@ -9,10 +9,10 @@ if(delta<0){
     alert(0);
 }else if(delta == 0){
     x1 = x2 = -b/(2*a);
-    alert(1);
+    alert('phuong trinh co 1 nghiem la ' + x1);
 }else{
     delta = Math.sqrt(delta);
     x1 = (-b + delta) / (2*a);
     x2 = (-b - delta) / (2*a);
-    alert(2);
+    alert('phuong trinh co 2 nghiem ' + x1 + ' va ' + x2);
 }
