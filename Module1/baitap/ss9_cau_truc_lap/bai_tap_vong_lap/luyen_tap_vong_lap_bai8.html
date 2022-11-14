@@ -5,6 +5,25 @@
     <title>Title</title>
 </head>
 <body>
-<script src="luyen_tap_vong_lap_bai8.js"></script>
+<script>
+    let min = +prompt("Nhập giá trị min: ");
+    let max = +prompt("Nhập giá trị max");
+    for (let a = 1; a <= 3; a++) {
+        let y = +prompt("đoán số: ");
+        let x = Math.floor(Math.random() * max) + min;
+        if (x == y) {
+            alert("Chúc mừng");
+            break;
+        } else {
+            if (y > x) {
+                alert("Lớn hơn")
+            } else {
+                alert("Nhỏ hơn")
+            }
+        }
+
+    }
+
+</script>
 </body>
 </html>
