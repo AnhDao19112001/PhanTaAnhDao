@@ -1,4 +1,4 @@
-let phamvi = Number(prompt("Trò chơi đoán số từ 0 - 100"))
+let phamvi = Number(prompt("Trò chơi đoán số từ 0 - "))
 let nhapso = Number(prompt("Nhập vào số muốn đoán"))
 let soRamdom
 if(phamvi){
