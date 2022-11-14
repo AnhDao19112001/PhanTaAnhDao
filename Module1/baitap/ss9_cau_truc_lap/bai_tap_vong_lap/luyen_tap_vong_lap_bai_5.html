@@ -5,6 +5,23 @@
     <title>Title</title>
 </head>
 <body>
-<script src="luyen_tap_vong_lap_bai5.js"></script>
+<script>
+    let a = 0
+    let b = 1
+    let c = a + b
+    let result = '0 1 1';
+    let tong = 2;
+    count = 0;
+    while (count < 17) {
+        a = b
+        b = c
+        c = a + b
+        result = result + c + '<br> '
+        count++;
+        tong = tong + c
+    }
+    document.write(result)
+    document.write("tong la " +tong)
+</script>
 </body>
 </html>

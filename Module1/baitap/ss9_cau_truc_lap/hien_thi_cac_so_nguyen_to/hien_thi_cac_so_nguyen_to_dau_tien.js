@@ -1,3 +1,4 @@
+
 function checkNT(number) {
     let count = 0; // đếm số ước của số đang xét;
     let countSNT = 0; // đếm xem đã đủ số lượng số nguyên tố cần in ra chưa;
