@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div id="bai2"></div>-->
+<script>
+    let a =[65,32,2,5,8,85,54,12,16,9]
+    let max=0
+
+    for ( i = 0; i <a.length ; i++) {
+        if(a[i]>max){
+            max=a[i]
+        }
+    }alert('phần tử có giá trị lớn nhất trong mảng là '+max+' tại vị trí thứ '+a.indexOf(max))
+
+</script>
+
+
+    // let i;
+    // let a = [];
+    // let dem=1;
+    // let max;
+    // for (i=1; i<=10; i++){
+    //     a[i]= +prompt('nhap so thu ' + i);
+    //     if(i==1 )
+    //        max=+a[1];
+    //        if(+a[i] > max)
+    //            max = +a[i]
+    //            dem=i
+    // }
+    // document.getElementById('bai2').innerHTML='so lon nhat la' + max + 'nam o vi tri' + dem;
+
+
+    // let i;
+    // let arr=[];
+    // let dem=1;
+    // let max;
+    // for (i=1;i<=10;i++){
+    //     arr[i]=prompt('Nhập số thứ '+i)
+    //     if (i==1) max=+arr[1];
+    //     if (+arr[i]>max){
+    //         max=+arr[i];
+    //         dem=i;
+    //     }
+    // }
+    // document.getElementById('bai2').innerHTML='Số lớn nhất là '+max+' ở vị trí thứ '+dem;
+</body>
+</html>

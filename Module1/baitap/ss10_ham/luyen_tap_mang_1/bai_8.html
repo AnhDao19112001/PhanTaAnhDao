@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let n = +prompt('Số phần tử bạn cần nhập');
+    for (let i = 0; i < n; i++) {
+        a[i] = prompt('Nhap cho phan tu la:  ' + i);
+        a.sort(function(a, b){return b - a});
+    }
+    document.write(a)
+</script>
+</body>
+</html>
