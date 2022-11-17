@@ -6,15 +6,31 @@
 </head>
 <body>
 <script>
-    let a = [];
-    let n = +prompt('Số phần tử bạn cần nhập');
-    for (let i = 0; i < n; i++) {
-        a[i] = prompt('Nhap cho phan tu la:  ' + i);
-        if(a[i]=='V'){
-            document.write('V is in the array')
-        }else {
-            document.write('V is not in the array')
-        }
+     // c1
+       let a = new Array(10);
+    // for(let i = 0; i< a.length; i++);{
+       a[i] = +prompt('nhap vao a[${i}]:');
+    // }
+       let v = +prompt('Input v : ');
+    // if (a.indexOf(v)!== -1) {
+    //     console.log('V is array...');
+    // }else{
+    //     console.log('V is not array');
+   //}
+         // hoac muon ngan hon ta co the dung toan tu 3 ngoi
+        //console.log(a.indexOf(v) !== -1 ? 'V is array...' : 'V is not array');
+    //c2
+    let flag = false;
+    for(let i=0; i< a.length; i++){
+    if (v == a[i]){
+        flag = true;
+        break;
+    }
+     }
+    if (flag){
+        console.log('V is array...');
+    }else {
+        console.log('V is not array');
     }
 </script>
 </body>

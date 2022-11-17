@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuoi1 = prompt("nhap chuoi 1: ");
+    let chuoi2 = prompt("nhap chuoi 2: ");
+    let mang1 = chuoi1.split(' ');
+    let mang2 = chuoi2.split(' ');
+    let flag = true;
+    if (mang1.length === mang2.length) {
+        for (let i = 0; i < mang1.length; i++) {
+            if (mang1[i] === mang2[i]) {
+                flag = true;
+            } else {
+                alert("hai mang khac nhau");
+                flag = false;
+                break;
+            }
+        }
+        if (flag) {
+            alert("hai mang giong nhau")
+        }
+    }
+</script>
+</body>
+</html>
