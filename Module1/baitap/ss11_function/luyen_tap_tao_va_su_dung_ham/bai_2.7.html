@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x=+prompt("Nhập số a");
+    let y=+prompt("Nhập số b")
+    function doicho(a,b) {
+        let temp = a;
+        a = b;
+        b = temp;
+        alert("Số a và b hiện tại lần lượt là: "+a+" và "+b)
+    }
+    doicho(x,y);
+</script>
+</body>
+</html>
