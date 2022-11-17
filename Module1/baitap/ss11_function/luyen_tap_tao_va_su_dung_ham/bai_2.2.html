@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<label>Nhập bán kính r:</label>
+<input type="text" id="r" oninput="tinh()">
+<p>Chu vi là:</p>
+<p id="chuVi"></p>
+<p>Diện tích là:</p>
+<p id="dienTich"></p>
+<body>
+<script>
+    function tinh() {
+     let r= document.getElementById('r').value;
+     cv= 2*r*3.14
+     dt= r*r*3.15
+     document.getElementById('chuVi').innerHTML=cv
+     document.getElementById('dienTich') .innerHTML=dt
+    }
+</script>
+</body>
+</html>
