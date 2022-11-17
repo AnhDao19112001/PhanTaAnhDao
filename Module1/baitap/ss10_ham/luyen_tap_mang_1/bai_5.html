@@ -5,6 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let a = [];
+    let n = +prompt('Số phần tử bạn cần nhập');
+    let dem =0
+    for (let i = 0; i < n; i++) {
+        a[i] = +prompt('Nhap cho phan tu la:  ' + i);
+        if(a[i]<0){
+            document.write(a[i])
+            dem++;
+        }
+    }
+    document.write('số lượng nguyên âm trong mảng là ' + dem)
+</script>
 </body>
 </html>
