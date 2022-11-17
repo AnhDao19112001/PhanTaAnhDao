@@ -5,6 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let chuoi1= prompt('Nhập vào các chuỗi ký tự')
+    let a = chuoi1.split('')
+    let count = 0;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i]/a[i] != 1 ) {
+            count++;
+        }
+    }
+    document.write("có " + count + " từ trong chuỗi");
+</script>
 </body>
-</html>
