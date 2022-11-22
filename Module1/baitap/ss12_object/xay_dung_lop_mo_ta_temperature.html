@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>e
+    <script>
+    class Temperature {
+        celsius;
+        constructor(celsius) {
+            this.celsius = celsius;
+        }
+
+        fahrenheit() {
+            return 9/5 * this.celsius + 32;
+        }
+
+        kelvins() {
+            return this.celsius + 273.15
+        }
+    }
+
+    let temperature = new Temperature(25);
+    let my_fahrenheit = temperature.fahrenheit();
+    let my_kelvins = temperature.kelvins();
+
+    document.write("Nhiệt độ K: " + my_kelvins + "<br>"
+        + "Nhiệt độ F: " + my_fahrenheit)
+
+    // class Temprature {
+    //     constructor(celsius) {
+    //         this.celsius = clsius;
+    //     }
+    //
+    //     toFahrenheit() {
+    //         return this.celsius * 9 / 5 + 32;
+    //     }
+    //
+    //     toKelvin() {
+    //         return this.celsius + 273.15;
+    //     }
+    // }
+    //
+    // let temprature = new Temprature(25)
+    // let toFahrenheit = temprature.toFahrenheit();
+    // let toKelvin = temprature.toKelvin();
+    // document.getElementById('temprature').innerHTML = 'Độ F: ' + toFahrenheit;
+    // document.getElementById('temprature2').innerHTML = 'Độ K: ' + toKelvin;
+</script>
+</body>
+</html>
