@@ -5,6 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let a = [7,5,8,9];
+    let b = [7,7,7,6,8,9];
+    let newarr = [];
+    let index;
+    for(let i =0;i<b.length;i++){
+        index = a.indexOf(b[i]);
+        if(index == -1){
+            newarr.push(b[i]);
+        }
+    }
+    console.log(newarr);
+</script>
 </body>
 </html>

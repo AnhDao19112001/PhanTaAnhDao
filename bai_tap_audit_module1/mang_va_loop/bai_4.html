@@ -5,6 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-
+<div id="4"></div>
+<script>
+    let letter = ['Không', 'Một', 'Hai', 'Ba', 'Bốn', 'Năm', 'Sáu', 'Bảy', 'Tám', 'Chín'];
+    let number = prompt('Nhập vào 1 số: ');
+    let result = '';
+    for (let i = 0; i < number.length; i++) {
+        result = result + letter[+number[i]] + ' ';
+    }
+    document.getElementById('4').innerHTML = result;
+</script>
 </body>
 </html>

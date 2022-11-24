@@ -11,12 +11,12 @@
     let arr = [];
     let arr2 = [];
     let e = 0;
-    let i, j;
-    for (i = 0; i < n; i++) {
+
+    for (let i = 0; i < n; i++) {
         arr[i] = prompt('Nhập phần tử thứ ' + i)
     }
     for (i = 0; i < n; i++) {
-        for (j = 0; j <= i; j++) {
+        for (let j = 0; j <= i; j++) {
             e += +arr[j]
         }
         arr2.push(e);

@@ -5,6 +5,22 @@
     <title>Title</title>
 </head>
 <body>
-
+<div id="3"></div>
+<script>
+    let n = +prompt('nhap so phan tu ban muon: ');
+    let numerator = [];
+    let denominator = [];
+    let i;
+    let max;
+    for (i = 0; i < n; i++) {
+        numerator[i] = prompt('Nhap so phan tu thu: ' + i);
+        denominator[i] = prompt('Nhap so phan tu thu: ' + i);
+        if (i == 0)
+            max = (+numerator[i]) / (+denominator[i])
+        if ((+numerator[i]) / (+denominator[i]) > max)
+            max = (+numerator[i]) / (+denominator[i])
+    }
+    document.getElementById('3').innerHTML = 'Chi so lon nhat : ' + Math.ceil(max);
+</script>
 </body>
 </html>
