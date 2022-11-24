@@ -5,7 +5,46 @@
     <title>Title</title>
 </head>
 <body>
+<div id="bai3"></div>
 <script>
+    let m=+prompt('Nhập m: ');
+    let n=+prompt('Nhập n: ');
+    let i,j;
+    let a=[];
+    function max(arr) {
+        let i,j;
+        let max;
+        for (i=0;i<m;i++){
+            for (j=0;j<n;j++){
+                if (i==j && i==0){
+                    max=arr[i][j];
+                }
+                if (arr[i][j]>max) max = arr[i][j];
+            }
+        }
+        return max;
+    }
+    function min(arr) {
+        let i,j;
+        let min;
+        for (i=0;i<m;i++){
+            for (j=0;j<n;j++){
+                if (i==j && i==0){
+                    min=arr[i][j];
+                }
+                if (arr[i][j]<min) min = arr[i][j];
+            }
+        }
+        return min;
+    }
+    for (i=0;i<m;i++){
+        let b=[];
+        a.push(b)
+        for (j=0;j<n;j++){
+            b[j]=prompt('Nhập phần tử thứ '+j+' ở hàng thứ '+i);
+        }
+    }
+    document.write('Max: '+max(a)+' và min là: '+min(a))
 </script>
 </body>
 </html>
