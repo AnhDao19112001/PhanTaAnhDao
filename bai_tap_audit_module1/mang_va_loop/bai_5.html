@@ -5,6 +5,38 @@
     <title>Title</title>
 </head>
 <body>
-
+<div id="list"></div>
+<div id="result"></div>
+<script>
+    let i;
+    let price;
+    let drinks = ['Cafe', 'Cam vắt', 'Nước ép cà rốt', 'Nước ép cà chua', 'Nước lọc', 'Nước dừa'];
+    document.getElementById('list').innerHTML = 'Menu có: ' + drinks;
+    do {
+        i = +prompt('Nhập chỉ số bạn muốn thực hiện')
+        let amount = +prompt('Số lượng bạn muốn: ');
+        switch (i) {
+            case 1:
+                price = amount * 12000;
+                break;
+            case 2:
+                price = amount * 20000;
+                break;
+            case 3:
+                price = amount * 18000;
+                break;
+            case 4:
+                price = amount * 18000;
+                break;
+            case 5:
+                price = amount * 10000;
+                break;
+            case 6:
+                price = amount * 25000;
+                break;
+        }
+    } while (i < 1 || i >= 7)
+    document.getElementById('result').innerHTML = 'Giá là: ' + price + ' VND';
+</script>
 </body>
 </html>

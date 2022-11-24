@@ -6,17 +6,19 @@
 </head>
 <body>
 <script>
-    let a = [7,5,8,9];
-    let b = [7,7,7,6,8,9];
-    let newarr = [];
+    let a = [7, 5, 8, 9];
+    let b = [7, 7, 7, 6, 8, 9];
+    let newArr = [];
     let index;
-    for(let i =0;i<b.length;i++){
+    for (let i = 0; i < b.length; i++) {
         index = a.indexOf(b[i]);
-        if(index == -1){
-            newarr.push(b[i]);
+        if (index === -1) {
+            newArr.push(b[i]);
+        } else {
+            a.splice(index,1);
         }
     }
-    console.log(newarr);
+    console.log(newArr);
 </script>
 </body>
 </html>
