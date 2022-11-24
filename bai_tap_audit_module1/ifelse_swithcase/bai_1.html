@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let Luong= +prompt('nhap so luong');
+    let thue_ca_nhan;
+    if (Luong>=15){
+        thue_ca_nhan=Luong*20/100;
+        alert('thue ca nhan la 20%,so tien thue la ' + thue_ca_nhan );
+    }else if(Luong>=7){
+        thue_ca_nhan=Luong*10/100;
+        alert('thue ca nha la 10%, so tien thue la ' + thue_ca_nhan);
+    }else {
+        thue_ca_nhan=Luong*5/100;
+        alert('thue ca nhan la 5%, so tien thue la ' + thue_ca_nhan);
+    }
+</script>
 </body>
 </html>

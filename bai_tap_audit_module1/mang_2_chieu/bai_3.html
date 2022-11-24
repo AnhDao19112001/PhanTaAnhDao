@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Doi so thanh chu</h1>
+<input type="number" id="KT">
+<button onclick="check_num()">Check</button>
+<script>
+    function check_num() {
+        let KT = document.getElementById('KT').varlue;
+        switch (KT) {
+            case 0:
+                alert("khong");
+                break;
+            case 1:
+                alert("mot");
+                break;
+            case 2:
+                alert("hai");
+                break;
+            case 3:
+                alert("ba");
+                break;
+            case 4:
+                alert("bon");
+                break;
+            case 5:
+                alert("nam");
+                break;
+            case 6:
+                alert("sau");
+                break;
+            case 7:
+                alert("bay");
+                break;
+            case 8:
+                alert("tam");
+                break;
+            case 9:
+                alert("chin");
+                break;
+            default :
+                alert("vui long nhap lai so");
+        }
+
+        //soTemp = soTemp / 10;
+    }
+
+
+</script>
+</body>
+</html>
