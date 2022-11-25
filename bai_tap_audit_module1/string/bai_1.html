@@ -6,5 +6,62 @@
 </head>
 <body>
 
+<script>
+    // function longest(arr) {
+    //     let i;
+    //     let max;
+    //     let result;
+    //     for (i = 0; i < arr.length; i++) {
+    //         if (i == 0) {
+    //             max = arr[i].length;
+    //             result = arr[i];
+    //         }
+    //         if (arr[i].length > max) {
+    //             max = arr[i].length;
+    //             result = arr[i];
+    //         }
+    //     }
+    //     return result;
+    // }
+    //
+    // let str = prompt('Nhập vào chuỗi: ').trim(); // xoa khoang cach dau va cuoi
+    // let str1 = str.toLowerCase();
+    // let i;
+    // let str2 = str1[0].toUpperCase();
+    // for (i = 1; i < str1.length; i++) {
+    //     if (str1[i] != ' ' && str1[i - 1] == ' ') {
+    //         str2 = str2 + str1[i].toUpperCase();
+    //     } else if (str1[i] == ' ' && (str1[i + 1] != ' ' || str1[i - 1] != ' ')) str2 = str2 + str1[i];
+    //     else if (str1[i] != ' ') str2 = str2 + str1[i];
+    // }
+    // let mang = str2.split(' ');
+    // document.write('Xâu sau khi chuyển hóa là: ' + str2);
+    // document.write('<br>');
+    // document.write('Từ dài nhất: ' + longest(mang));
+
+    function titleCase(str) {
+        let a = str.toLowerCase().split(' '); // viet thuong
+        for (let i = 0; i < a.length; i++) {
+            a[i] = a[i].charAt(0).toUpperCase() + a[i].substring(1); // chon 1 mang va viet hoa gia tri dau
+
+        }
+        return a.join(' '); // xoa dau cach
+    }
+
+    function max(arr) {
+        let max = arr[0]
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] > max) {
+                arr[j] = max
+            }
+        }
+        return max;
+    }
+
+    let a = prompt('Nhap chuoi muon chuyen doi')
+    document.write(titleCase(a));
+    let arr = titleCase(a).split(' ');
+    document.writeln(max(arr))
+</script>
 </body>
 </html>
