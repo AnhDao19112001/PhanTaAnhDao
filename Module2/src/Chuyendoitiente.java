@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class chuyen_doi_tien_te {
+public class Chuyendoitiente {
     public static void main(String[] args) {
         double vnd = 23000;
         double usd;
