@@ -1,5 +1,7 @@
 package ss3;
+
 import java.util.Scanner;
+
 public class XoaPhanTuKhoiMang {
     public static void main(String[] args) {
         int n, i, c;

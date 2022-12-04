@@ -18,9 +18,6 @@ public class PhanTuNhoNhat {
                     max = num;
             }
             System.out.printf("\nSố lớn nhất trong mảng là: %.2f", max);
-
-           // System.out.println("\n----------------------------------");
-           // System.out.println("Chương trình này được đăng tại Freetuts.net");
         }
     }
 

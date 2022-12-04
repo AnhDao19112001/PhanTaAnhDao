@@ -18,7 +18,7 @@ public class TimPhanTuLonNhat {
         System.out.println("Nhập các phần tử cho ma trận: ");
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                System.out.print("A[" + i + "]["+ j + "] = ");
+                System.out.print("A[" + i + "][" + j + "] = ");
                 A[i][j] = scanner.nextInt();
             }
         }

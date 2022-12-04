@@ -1,7 +1,5 @@
 package ss3;
-
 import java.util.Scanner;
-
 public class ThemPhanTuVaoMang {
         public static void main(String[] args) {
             int size = 20; // Suc chua cua mang
