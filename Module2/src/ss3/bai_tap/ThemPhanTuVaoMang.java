@@ -30,7 +30,7 @@
 //            return n + 1; // tang so luong phan tu cua mang them 1
 //        }
 //    }
-package ss3;
+package ss3.bai_tap;
 import java.util.Arrays;
 import java.util.Scanner;
 public class ThemPhanTuVaoMang {

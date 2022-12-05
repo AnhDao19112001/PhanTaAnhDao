@@ -1,4 +1,4 @@
-package ss3;
+package ss3.bai_tap;
 
 import java.util.Arrays;
 
