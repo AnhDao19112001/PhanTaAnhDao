@@ -1,8 +1,8 @@
-package ss2;
+package ss2.bai_tap;
 
 import java.util.Scanner;
 
-public class KiemTraSoNguyenTo {
+public class ShowFirst20Primes {
 
     public static void main(String[] args) {
         int n;

@@ -1,8 +1,8 @@
-package ss2;
+package ss2.bai_tap;
 
 import java.util.Scanner;
 
-public class HienThiCacSoNguyenToNhoHon100 {
+public class ShowPrimesLessThan100 {
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.print("Nhập n = ");
