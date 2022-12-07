@@ -1,5 +1,7 @@
 package ss3.bai_tap;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Matrix {
@@ -20,6 +22,7 @@ public class Matrix {
                 }
             }
         }
+        System.out.println(Arrays.deepToString(arr));
         System.out.println("Tong so duowng cheo chinh trong Maxtrix la:" + sum);
     }
 }
