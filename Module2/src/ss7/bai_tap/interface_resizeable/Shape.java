@@ -1,6 +1,6 @@
-package ss7.bai_tap.interface_colorable;
+package ss7.bai_tap.interface_resizeable;
 
-public abstract class Shape {
+public abstract class Shape implements Resizeable {
     private String color = "green";
     private boolean filled = true;
 
@@ -27,6 +27,8 @@ public abstract class Shape {
     public void setFilled(boolean filled) {
         this.filled = filled;
     }
+
+    public abstract double getArea();
 
     @Override
     public String toString() {

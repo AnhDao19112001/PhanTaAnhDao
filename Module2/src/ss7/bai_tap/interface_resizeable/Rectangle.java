@@ -1,6 +1,6 @@
-package ss7.bai_tap.interface_colorable;
+package ss7.bai_tap.interface_resizeable;
 
-public abstract class Rectangle extends Shape {
+public class Rectangle extends Shape {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -50,5 +50,11 @@ public abstract class Rectangle extends Shape {
                 + getLength()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    @Override
+    public void resize(double percent) {
+        setWidth(getWidth() + getWidth() * percent / 100);
+        setLength(getLength() + getLength() * percent / 100);
     }
 }
