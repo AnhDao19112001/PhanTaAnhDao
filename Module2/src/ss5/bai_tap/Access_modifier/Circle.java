@@ -1,8 +1,8 @@
 package ss5.bai_tap.Access_modifier;
 
 public class Circle {
-    private double radius = 1.0;
-    private String color = "red";
+    private double radius=1.0;
+    private String color="red";
 
     public Circle() {
     }
@@ -27,4 +27,5 @@ public class Circle {
     public String toString() {
         return String.format("radius: %1.2f, area: %1.2f, color: %s.", getRadius(), getArea(), getColor());
     }
+
 }

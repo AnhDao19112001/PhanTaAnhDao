@@ -9,18 +9,6 @@ public class Fan {
     private double radius = 5;
     private String color = "blue";
 
-//    public int getSLOW() {
-//        return SLOW;
-//    }
-//
-//    public int getMEDIUM() {
-//        return MEDIUM;
-//    }
-//
-//    public int getFAST() {
-//        return FAST;
-//    }
-
     public int getSpeed() {
         return speed;
     }
@@ -61,7 +49,7 @@ public class Fan {
             return "speed: " + getSpeed() + ", color: " + getColor() + ", radius: " + getRadius() + ", fan is on!";
         }
 
-        return "color: " + getColor() + ", radius: " + getRadius() + ", fan is off!";
+        return "speed: " + getSpeed() + ", color: " + getColor() + ", radius: " + getRadius() + ", fan is off!";
     }
 }
 

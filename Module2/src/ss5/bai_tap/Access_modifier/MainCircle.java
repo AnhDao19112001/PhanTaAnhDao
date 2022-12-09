@@ -5,7 +5,7 @@ public class MainCircle {
         Circle circle1 = new Circle();
         System.out.println("CIRCLE 1:\n" + circle1);
 
-        Circle circle2 = new Circle(2, "blue");
+        Circle circle2 = new Circle(3, "blue");
         System.out.println("CIRCLE 2:\n" + circle2);
     }
 }
