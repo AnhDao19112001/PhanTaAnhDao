@@ -1,97 +1,69 @@
 package ss8.bai_tap.Refactoring;
 
 public class TennisGame {
-    public static final int LOVE = 0;
-    public static final int FIFTEEN = 1;
-    public static final int THIRTY = 2;
-    public static final int FOURTY = 3;
 
-    public static String getScore(String firstPlayerName, String secondPlayerName, int firstPlayerScore, int secondPlayerScore) {
+    public static String getScore(String player1Name, String player2Name, int scorePlayer1, int scorePlayer2) {
         String score = "";
         int tempScore = 0;
-        if (firstPlayerScore == secondPlayerScore) {
-            return result(firstPlayerScore);
+        if (scorePlayer1 == scorePlayer2) {
+            score = draw(scorePlayer1);
+        } else if (scorePlayer1 >= 4 || scorePlayer2 >= 4) {
+            score = player2Win(scorePlayer1, scorePlayer2);
+        } else {
+            for (int i = 1; i < 3; i++) {
+                if (i == 1) tempScore = scorePlayer1;
+                else {
+                    score += "-";
+                    tempScore = scorePlayer2;
+                }
+                switch (tempScore) {
+                    case 0:
+                        score += "Love";
+                        break;
+                    case 1:
+                        score += "Fifteen";
+                        break;
+                    case 2:
+                        score += "Thirty";
+                        break;
+                    case 3:
+                        score += "Forty";
+                        break;
+                }
+            }
         }
-
-        if (firstPlayerScore >= 4 || secondPlayerScore >= 4) {
-            return win(firstPlayerScore, secondPlayerScore);
-        }
-
-        return currentScore(firstPlayerScore, secondPlayerScore, score);
+        return score;
     }
 
-    /**
-     *
-     * @param firstPlayerScore: điểm số của người chơi thứ nhất (trả về kết quả khi 2 người chơi bằng điểm nhau)
-     * @return điểm số của người chơi thứ nhất theo cách gọi trong Tennis
-     */
-    public static String result(int firstPlayerScore) {
-        switch (firstPlayerScore) {
-            case LOVE:
-                return "Love-All";
-            case FIFTEEN:
-                return "Fifteen-All";
-            case THIRTY:
-                return "Thirty-All";
-            case FOURTY:
-                return "Forty-All";
+    private static String player2Win(int scorePlayer1, int scorePlayer2) {
+        String score;
+        int minusResult = scorePlayer1 - scorePlayer2;
+        if (minusResult == 1) score = "Advantage player1";
+        else if (minusResult == -1) score = "Advantage player2";
+        else if (minusResult >= 2) score = "Win for player1";
+        else score = "Win for player2";
+        return score;
+    }
+
+    private static String draw(int scorePlayer1) {
+        String score;
+        switch (scorePlayer1) {
+            case 0:
+                score = "Love-All";
+                break;
+            case 1:
+                score = "Fifteen-All";
+                break;
+            case 2:
+                score = "Thirty-All";
+                break;
+            case 3:
+                score = "Forty-All";
+                break;
             default:
-                return "Deuce";
-        }
-    }
+                score = "Deuce";
+                break;
 
-    /**
-     *
-     * @param firstPlayerScore:  điểm số của người chơi thứ nhất
-     * @param secondPlayerScore: điểm số của người chơi thứ hai
-     * @return kết quả là lợi thế hoặc chiến thắng cho 1 trong 2 người chơi trong game đấu đó
-     */
-    public static String win(int firstPlayerScore, int secondPlayerScore) {
-        int minusResult = firstPlayerScore - secondPlayerScore;
-        if (minusResult == 1) {
-            return "Advantage player1";
-        }
-
-        if (minusResult == -1) {
-            return "Advantage player2";
-        }
-
-        if (minusResult >= 2) {
-            return "Win for player1";
-        }
-
-        return "Win for player2";
-    }
-
-    /**
-     *
-     * @param firstPlayerScore: điểm số của người chơi thứ nhất
-     * @param secondPlayerScore: điểm số của người chơi thứ hai
-     * @param score: điểm ghi được hiên tại
-     * @return điểm ghi được hiên tại
-     */
-    public static String currentScore(int firstPlayerScore, int secondPlayerScore, String score) {
-        int tempScore;
-        for (int i = 1; i < 3; i++) {
-            if (i == 1) tempScore = firstPlayerScore;
-            else {
-                score += "-";
-                tempScore = secondPlayerScore;
-            }
-            switch (tempScore) {
-                case LOVE:
-                    score += "Love";
-                    break;
-                case FIFTEEN:
-                    score += "Fifteen";
-                    break;
-                case THIRTY:
-                    score += "Thirty";
-                    break;
-                case FOURTY:
-                    score += "Forty";
-                    break;
-            }
         }
         return score;
     }
