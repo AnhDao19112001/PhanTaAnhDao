@@ -49,6 +49,7 @@ public abstract class Rectangle extends Shape {
                 + " and length="
                 + getLength()
                 + ", which is a subclass of "
+                + getPerimeter()
                 + super.toString();
     }
 }

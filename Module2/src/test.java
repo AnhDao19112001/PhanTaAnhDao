@@ -1,13 +1,16 @@
 public class test {
-    public static int main(String[] args) {
-        int sum = 0;
-        for (int i = 1; i <= 1000 ; i++) {
-            if(i%2==0){
-                sum += i;
-            }
-            System.out.println(sum);
-           return sum;
+    public static void main(String[] args) {String msg = "codegym";
+        int x = 2;
+        int[] y = {1,2,3,4,5};
+        int[] z = {6,7,8,9,10,11};
+
+        if(y[x] + z[x-1] == z[x+2])
+        {
+            System.out.println("Codegym");
         }
-        return sum;
+        else
+        {
+            System.out.println("Agilead");
+        }
     }
 }

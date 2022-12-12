@@ -10,26 +10,43 @@ public class TennisGame {
         } else if (scorePlayer1 >= 4 || scorePlayer2 >= 4) {
             score = player2Win(scorePlayer1, scorePlayer2);
         } else {
-            for (int i = 1; i < 3; i++) {
-                if (i == 1) tempScore = scorePlayer1;
-                else {
-                    score += "-";
-                    tempScore = scorePlayer2;
-                }
-                switch (tempScore) {
-                    case 0:
-                        score += "Love";
-                        break;
-                    case 1:
-                        score += "Fifteen";
-                        break;
-                    case 2:
-                        score += "Thirty";
-                        break;
-                    case 3:
-                        score += "Forty";
-                        break;
-                }
+            if (1 == 1) tempScore = scorePlayer1;
+            else {
+                score += "-";
+                tempScore = scorePlayer2;
+            }
+            switch (tempScore) {
+                case 0:
+                    score += "Love";
+                    break;
+                case 1:
+                    score += "Fifteen";
+                    break;
+                case 2:
+                    score += "Thirty";
+                    break;
+                case 3:
+                    score += "Forty";
+                    break;
+            }
+            if (2 == 1) tempScore = scorePlayer1;
+            else {
+                score += "-";
+                tempScore = scorePlayer2;
+            }
+            switch (tempScore) {
+                case 0:
+                    score += "Love";
+                    break;
+                case 1:
+                    score += "Fifteen";
+                    break;
+                case 2:
+                    score += "Thirty";
+                    break;
+                case 3:
+                    score += "Forty";
+                    break;
             }
         }
         return score;

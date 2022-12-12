@@ -1,17 +1,15 @@
 package ss8.bai_tap.Refactoring;
 
-//import org.junit.Test;
-//import org.junit.runner.RunWith;
-//import org.junit.runners.Parameterized;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
 import java.util.Arrays;
 import java.util.Collection;
 
-import static kotlin.test.AssertionsKt.assertEquals;
+import static org.junit.Assert.assertEquals;
 
-//import static org.junit.Assert.assertEquals;
-//
-//@RunWith(Parameterized.class)
+@RunWith(Parameterized.class)
 public class MainTennis {
 
     private int player1Score;
@@ -24,7 +22,7 @@ public class MainTennis {
         this.expectedScore = expectedScore;
     }
 
-    //@Parameterized.Parameters
+    @Parameterized.Parameters
     public static Collection<Object[]> getAllScores() {
         return Arrays.asList(new Object[][] {
                 { 0, 0, "Love-All" },
@@ -68,7 +66,7 @@ public class MainTennis {
         });
     }
 
-    //@Test
+    @Test
     public void checkAllScores() {
         int highestScore = Math.max(this.player1Score, this.player2Score);
         int m_score1 = 0;
@@ -80,8 +78,5 @@ public class MainTennis {
                 m_score2 += 1;
         }
         assertEquals(this.expectedScore, TennisGame.getScore("John", "Bill", m_score1, m_score2));
-    }
-
-    private void assertEquals(String expectedScore, String score) {
     }
 }
