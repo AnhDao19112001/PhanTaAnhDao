@@ -1,4 +1,4 @@
-package ss12.bai_tap.Product.Model;
+package ss12.bai_tap.ArrayList.Product.Model;
 
 public class Product {
     private int id;
