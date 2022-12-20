@@ -15,18 +15,18 @@ public class Sort_Algorithm {
         }
         System.out.println("Mảng vừa tạo là: " + Arrays.toString(array));
 
-        int pos;
-        int x;
-        for (int i = 1; i < array.length; i++) {
-            pos = array[i];
-            x = i;
-            while (x > 0 && pos < array[x - 1]) {
-                array[x] = array[x - 1];
-                x--;
+        for (int i = 0; i < array.length; i++) {
+            int pos = array[i]; // Cho biến tạm bằng giá trị ban dầu của i, tị i=1 thì temp = 3;
+            System.out.println("Array " + Arrays.toString(array) + "pos= " + pos);
+            int x = i;
+            for (; x > 0 && pos < array[x - 1]; x--) {
+                array[x] = array[x - 1]; //Thõa mãn điều kiện thì sẽ đổi chỗ, mảng hiện tại ở i=1 là []
+                System.out.println("Array " + Arrays.toString(array) + "pos= " + pos);
             }
-            array[x] = pos;
+            array[x] = pos; // tại i=1 thì arr[0] = ..., mảng iện tại array[]
+            System.out.println("Array " + Arrays.toString(array) + "pos= " + pos);
         }
-        System.out.println("Mảng sau khi sắp xếp: " + Arrays.toString(array));
+        System.out.println(Arrays.toString(array));
     }
 }
 
