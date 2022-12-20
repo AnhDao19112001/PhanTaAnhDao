@@ -1,4 +1,4 @@
-package ss14.bai_tap.Cai_dat_thua_toan_sap_xep;
+package ss14.bai_tap.Minh_hoa_thua_toan_sap_xep;
 
 import java.util.Arrays;
 import java.util.Scanner;
