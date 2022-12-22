@@ -22,7 +22,21 @@
 //            }catch (NumberFormatException e){
 //                e.getStackTrace();
 //            }
-//
+//            switch (choose){
+//                case 1:
+//                    iCustomerService.display;
+//                    break;
+//                case 2:
+//                    iCustomerService.add;
+//                    break;
+//                case 3:
+//                    iCustomerService.edit;
+//                    break;
+//                case 4:
+//                    System.exit(0);
+//                default:
+//                    System.out.println("Vui lòng nhập lại!");
+//            }
 //        }while (true);
 //    }
 //}
