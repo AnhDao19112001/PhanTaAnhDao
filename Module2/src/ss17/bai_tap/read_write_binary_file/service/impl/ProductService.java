@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class ProductService implements IProductService {
 private static final Scanner SCANNER = new Scanner(System.in);
-private static final String PATH = "D:\\Codegym\\Module2\\src\\ss17\\bai_tap\\read_write_binary_file\\data\\product.dat";
+private static final String PATH = "D:\\Codegym\\Module2\\src\\ss17\\bai_tap\\read_write_binary_file\\data\\text.dat";
 
     @Override
     public void add() {
@@ -56,10 +56,15 @@ private static final String PATH = "D:\\Codegym\\Module2\\src\\ss17\\bai_tap\\re
     @Override
     public void display() {
         List<Product> productList = ReadWriteProductFileUtil.readProductFile(PATH);
-        System.out.println("Danh sách sản phẩm: ");
-        for (Product product : productList){
-            System.out.println(product);
+        if (!productList.isEmpty()){
+            System.out.println("Danh sách sản phẩm: ");
+            for (Product product : productList){
+                System.out.println(product);
+            }
+        }else {
+            System.out.println("Khong ton tai sap pham");
         }
+
     }
 
     @Override
