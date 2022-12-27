@@ -1,14 +1,17 @@
 package caseStudy.Services.impl;
 
+import caseStudy.Models.Employee;
 import caseStudy.Services.IEmployeeService;
+import sun.plugin.javascript.navig.Link;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class EmployeeService implements IEmployeeService {
     private static final Scanner sc = new Scanner(System.in);
     @Override
     public void add() {
-        List<Employee> employeeList = ReadWriteEmployeeFileUtil.readEmployeeFile(Link.PATH_EMPLOYEE.getPath());
+        List<Employee> employeeList = ReadWriteEmployeeFileUtils.readEmployeeFile(Link.PATH_EMPLOYEE.getPath());
 
         System.out.print("\nNhập mã số nhân viên: ");
         String id;

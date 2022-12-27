@@ -5,11 +5,9 @@ public class Customer {
     private String address;
 
     public Customer() {
-        super();
     }
 
-    public Customer(String id, String name, String dateOfBirth, String gender, String idCard, String phone, String email, String customerType, String address) {
-        super();
+    public Customer(String customerType, String address) {
         this.customerType = customerType;
         this.address = address;
     }
@@ -30,27 +28,11 @@ public class Customer {
         this.address = address;
     }
 
-    public String getInfo() {
-        return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s\n",
-                this.getId(),
-                this.getName(),
-                this.getDateOfBirth(),
-                this.getGender(),
-                this.getIdCard(),
-                this.getPhone(),
-                this.getEmail(),
-                this.getCustomerType(),
-                this.getAddress());
-    }
-
-    public Object getId() {
-        return null;
-    }
-
     @Override
     public String toString() {
-        return "KHÁCH HÀNG - " + super.toString() +
-                ", Loại khách hàng: " + getCustomerType() +
-                ", Địa chỉ: " + getAddress();
+        return "Customer{" +
+                "customerType='" + customerType + '\'' +
+                ", address='" + address + '\'' +
+                '}';
     }
 }
