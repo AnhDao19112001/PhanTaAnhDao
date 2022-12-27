@@ -2,7 +2,7 @@ package ss19.validate_phone;
 
 import java.util.Scanner;
 
-public class checking_for_validity {
+public class ValidityPhone {
     private static final String REGEX_NAME = "^(C|A|P)+(\\d{4})(G|H|I|K|M+)*$";
 
     public static void main(String[] args) {

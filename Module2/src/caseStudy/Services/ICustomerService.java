@@ -1,4 +1,5 @@
-package caseStudy.Services;
-
-public interface ICustomerService {
-}
+//package caseStudy.Services;
+//
+//public interface ICustomerService extends IService {
+//    void edit();
+//}
