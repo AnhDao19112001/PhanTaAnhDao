@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class PromotionController {
     public void menuPromotionManagement(){
         Scanner scanner = new Scanner(System.in);
-        IPromotionService iPromotionService = new PromotionService();
+        IPromotionService iPromotionService = (IPromotionService) new PromotionService();
         do {
             System.out.println("\\nQUẢN LÝ KHUYẾN MÃI\\n\" +\n" +
                     "                    \"1. Hiển thị danh sách khách hàng sử dụng dịch vụ.\\n\" +\n" +

@@ -9,6 +9,7 @@ public class BookingController {
     public void menuBookingManagement(){
         Scanner scanner = new Scanner(System.in);
         IBookingService iBookingService = new BookingService();
+        IContractService iContractService = new ContractService();
         do{
             System.out.println("\nBooking Management\n"+
                     "1. Add new booking\n" +
@@ -32,10 +33,14 @@ public class BookingController {
                     iBookingService.display;
                     break;
                 case 3:
-                    iBookingService.edit;
+                    iContractService.add;
                 case 4:
-                    System.exit(0);
+                    iContractService.display;
                     break;
+                case 5:
+                    iContractService.edit();
+                case 6:
+                    return;
                 default:
                     System.out.println("Vui lòng nhập lại: ");
             }

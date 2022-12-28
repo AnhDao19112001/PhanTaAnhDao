@@ -1,15 +1,27 @@
 import java.util.Arrays;
+import java.util.Scanner;
 import java.util.TreeSet;
 
 public class test {
     public static void main(String[] args) {
-        TreeSet t = new TreeSet();
-        t.add("3");
-        t.add("9");
-        t.add("1");
-        t.add("4");
-        t.add("8");
-        System.out.println(t);
+        String chuoi;
+        char kyTu = 0;
+        int count = 0;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Nhập vào chuỗi bất kỳ: ");
+        chuoi = scanner.nextLine();
+
+        // duyệt từ đầu đến cuối chuỗi
+        for (int i = 0; i < chuoi.length(); i++) {
+            // Nếu ký tự tại vị trí thứ i bằng 'a' thì tăng count lên 1
+            if (chuoi.charAt(i) == kyTu) {
+                count++;
+            }
+        }
+
+        System.out.println("Số lần xuất hiện của ký tự " + kyTu +
+                " trong chuỗi " + chuoi + " = " + count);
     }
 
     }

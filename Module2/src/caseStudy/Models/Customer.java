@@ -4,12 +4,16 @@ public class Customer {
     private String customerType;
     private String address;
 
-    public Customer() {
+    public Customer(String id, String name,
+                    String dateOfbirth, String gender,
+                    String idCard, String phone,
+                    String email, String customerType, String address) {
     }
 
-    public Customer(String customerType, String address) {
+    public Customer(String customerType, String address, String id, String gender, String dateOfBirth, String info) {
         this.customerType = customerType;
         this.address = address;
+
     }
 
     public String getCustomerType() {
@@ -27,12 +31,36 @@ public class Customer {
     public void setAddress(String address) {
         this.address = address;
     }
+//    public String getInfo(){
+//        return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s\\n",
+//                this.getId(),
+//                this.getId(),
+//                this.getName(),
+//                this.getDateOfBirth(),
+//                this.getGender(),
+//                this.getIdCard(),
+//                this.getPhone(),
+//                this.getEmail(),
+//                this.getCustomerType(),
+//                this.getAddress());
+//
+//        )
+//    }
 
     @Override
     public String toString() {
-        return "Customer{" +
-                "customerType='" + customerType + '\'' +
-                ", address='" + address + '\'' +
+        return "Customer{" +super.toString()+
+                "customerType='" + getCustomerType() + '\'' +
+                ", address='" + getAddress() + '\'' +
                 '}';
     }
+
+    public char[] getInfo() {
+        return this.getInfo();
+    }
+
+    public String getId() {
+        return this.getId();
+    }
 }
+

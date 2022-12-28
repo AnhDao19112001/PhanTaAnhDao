@@ -71,12 +71,19 @@ public class Facility {
     @Override
     public String toString() {
         return "Facility{" +
-                "serviceId='" + serviceId + '\'' +
-                ", serviceName='" + serviceName + '\'' +
-                ", areaUse=" + areaUse +
-                ", rentalCosts=" + rentalCosts +
-                ", maxNumberOfPeople=" + maxNumberOfPeople +
-                ", renTalType='" + renTalType + '\'' +
+                "serviceId='" + getServiceId() + '\'' +
+                ", serviceName='" + getServiceName() + '\'' +
+                ", areaUse=" + getAreaUse() +
+                ", rentalCosts=" + getRentalCosts() +
+                ", maxNumberOfPeople=" + getMaxNumberOfPeople() +
+                ", renTalType='" + getRenTalType() + '\'' +
                 '}';
+    }
+
+    public char[] getInfo() {
+        return this.getInfo();
+    }
+
+    public void setRentalType(String rentalType) {
     }
 }

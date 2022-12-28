@@ -2,22 +2,27 @@ package caseStudy.Services.impl;
 
 import caseStudy.Models.Employee;
 import caseStudy.Services.IEmployeeService;
+import caseStudy.Utils.MenuUtil;
+import caseStudy.Utils.ReadWriteEmployeeFileUtil;
+import caseStudy.Utils.RegexExceptionUtil;
+import caseStudy.exception.DuplicateIdException;
+import caseStudy.exception.IdFormatException;
 import sun.plugin.javascript.navig.Link;
 
 import java.util.List;
 import java.util.Scanner;
 
 public class EmployeeService implements IEmployeeService {
-    private static final Scanner sc = new Scanner(System.in);
+    private static final Scanner Sc = new Scanner(System.in);
     @Override
     public void add() {
-        List<Employee> employeeList = ReadWriteEmployeeFileUtils.readEmployeeFile(Link.PATH_EMPLOYEE.getPath());
+        List<Employee> employeeList = ReadWriteEmployeeFileUtil.readEmployeeFile(Link.PATH_EMPLOYEE.getPath());
 
         System.out.print("\nNhập mã số nhân viên: ");
         String id;
         while (true) {
             try {
-                id = SCANNER.nextLine();
+                id = Sc.nextLine();
                 if (!id.matches("^E\\d{4}$")) {
                     throw new IdFormatException("Mã nhân viên phải đúng định dạng: EXXXX, với XXXX là các số từ 0-9!");
                 }
@@ -58,6 +63,7 @@ public class EmployeeService implements IEmployeeService {
         System.out.print("Nhập lương nhân viên (VNĐ/tháng): ");
         int salary = RegexExceptionUtil.getNumberGreaterThan0();
 
+
         employeeList.add(new Employee(id, name, dateOfBirth, gender, idCard, phone, email, level, position, salary));
         ReadWriteEmployeeFileUtil.writeEmployeeFile(Link.PATH_EMPLOYEE.getPath(), employeeList);
         System.out.println("Thêm mới thành công!");
@@ -76,17 +82,17 @@ public class EmployeeService implements IEmployeeService {
     public void edit() {
         List<Employee> employeeList = ReadWriteEmployeeFileUtil.readEmployeeFile(Link.PATH_EMPLOYEE.getPath());
         System.out.print("\nNhập mã số nhân viên cần chỉnh sửa: ");
-        String idEdit = SCANNER.nextLine();
+        String idEdit = Sc.nextLine();
         boolean isExist = false;
 
         for (Employee employee : employeeList) {
-            if (idEdit.equals(employee.getId())) {
+            if (idEdit.equals(employee.getPosition())) {
                 System.out.println("Nhân viên muốn chỉnh sửa: ");
                 System.out.println(employee);
                 System.out.println("Bạn có chắc muốn chỉnh sửa hay không?\n" +
                         " 1. Nhấn phím '1' nếu là CÓ.\n" +
                         " 2. Nhấn phím khác nếu là KHÔNG.");
-                String chooseYesNo = SCANNER.nextLine();
+                String chooseYesNo = Sc.nextLine();
 
                 if (chooseYesNo.equals("1")) {
                     do {
@@ -104,7 +110,7 @@ public class EmployeeService implements IEmployeeService {
                         int choose = 0;
                         try {
                             System.out.print("Mời bạn nhập lựa chọn: ");
-                            choose = Integer.parseInt(SCANNER.nextLine());
+                            choose = Integer.parseInt(Sc.nextLine());
                         } catch (NumberFormatException e) {
                             e.getStackTrace();
                         }

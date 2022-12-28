@@ -1,6 +1,5 @@
 package caseStudy.Controller;
 
-import caseStudy.Services.ICustomerService;
 import caseStudy.Services.impl.CustomerService;
 
 import java.util.Scanner;
@@ -33,7 +32,7 @@ public class CustomerController {
                     iCustomerService.edit;
                     break;
                 case 4:
-                    System.exit(0);
+                    return;
                 default:
                     System.out.println("Vui lòng nhập lại!");
             }
