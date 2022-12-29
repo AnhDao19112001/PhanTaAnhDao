@@ -4,7 +4,6 @@ import java.util.Objects;
 
 public class Booking {
     public char[] getInfo;
-
     private String bookingId;
     private String startDay;
     private String endDay;

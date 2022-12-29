@@ -1,5 +1,9 @@
 package caseStudy.Services;
 
-public interface IContractService extends IService{
-    void edit();
+public interface IContractService {
+    void addContracts();
+
+    void displayContracts();
+
+    void editContracts();
 }

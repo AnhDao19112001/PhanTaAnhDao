@@ -75,4 +75,8 @@ public class Contract {
                 ", customerId='" + getCustomerId() + '\'' +
                 '}';
     }
+
+    public char[] getInfo() {
+        return this.getInfo();
+    }
 }

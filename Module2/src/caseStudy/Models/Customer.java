@@ -1,19 +1,17 @@
 package caseStudy.Models;
 
-public class Customer {
+public class Customer extends Person{
     private String customerType;
     private String address;
 
-    public Customer(String id, String name,
-                    String dateOfbirth, String gender,
-                    String idCard, String phone,
-                    String email, String customerType, String address) {
+    public Customer() {
     }
 
-    public Customer(String customerType, String address, String id, String gender, String dateOfBirth, String info) {
+
+    public Customer(String id, String name, String dateOfBirth, String gender, String idCard, String phone, String email, String customerType, String address) {
+        super(id, name, dateOfBirth, gender, idCard, phone, email);
         this.customerType = customerType;
         this.address = address;
-
     }
 
     public String getCustomerType() {
@@ -31,7 +29,8 @@ public class Customer {
     public void setAddress(String address) {
         this.address = address;
     }
-//    public String getInfo(){
+
+    //    public String getInfo(){
 //        return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s\\n",
 //                this.getId(),
 //                this.getId(),
@@ -54,13 +53,17 @@ public class Customer {
                 ", address='" + getAddress() + '\'' +
                 '}';
     }
-
-    public char[] getInfo() {
-        return this.getInfo();
-    }
-
-    public String getId() {
-        return this.getId();
-    }
+//
+//    public char[] getInfo() {
+//        return this.getInfo();
+//    }
+//
+//    public String getId() {
+//        return this.getId();
+//    }
+//
+//    public void getIdCard() {
+//        this.getIdCard();
+//    }
 }
 

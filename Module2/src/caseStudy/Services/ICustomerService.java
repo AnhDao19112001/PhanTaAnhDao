@@ -1,5 +1,10 @@
 package caseStudy.Services;
 
-public interface ICustomerService extends IService{
+public interface ICustomerService{
+
+    void display();
+
+    void add();
+
     void edit();
 }

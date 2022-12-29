@@ -6,9 +6,9 @@ import caseStudy.Services.impl.FacilityService;
 import java.util.Scanner;
 
 public class FacilityController {
-    public void menuFacilityManagement(){
+    public void menuFacilityManagement() {
         Scanner scanner = new Scanner(System.in);
-        IFacilityService iFacilityService = new FacilityService();
+        FacilityService iFacilityService = new FacilityService();
         do {
             System.out.println("\\nQUẢN LÝ CƠ SỞ:\\n\" +\n" +
                     "                    \"1. Hiển thị cơ sở.\\n\" +\n" +
@@ -19,7 +19,7 @@ public class FacilityController {
             try {
                 System.out.println("Mời bạn nhập lựa chọn: ");
                 choose = Integer.parseInt(scanner.nextLine());
-            }catch (NumberFormatException e){
+            } catch (NumberFormatException e) {
                 e.getStackTrace();
             }
             switch (choose) {
@@ -37,7 +37,7 @@ public class FacilityController {
                 default:
                     System.out.println("Lựa chọn của bạn không có, vui lòng chọn lại!");
             }
-        }while (true);
+        } while (true);
     }
 
 }

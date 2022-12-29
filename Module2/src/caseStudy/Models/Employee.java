@@ -1,17 +1,18 @@
 package caseStudy.Models;
 
-public class Employee {
+public class Employee extends Person{
     private String level;
     private String position;
     private int salary;
 
-    public Employee(String s, String s1, String s2, String s3, String s4, String s5, String s6, String s7, String s8){
-
+    public Employee() {
     }
 
-    public Employee(String id, String name, String dateOfBirth, String gender,
-                    String idCard, String phone, String email, String level,
-                    String position, int salary) {
+    public Employee(String id, String name, String dateOfBirth, String gender, String idCard, String phone, String email, String level, String position, int salary) {
+        super(id, name, dateOfBirth, gender, idCard, phone, email);
+        this.level = level;
+        this.position = position;
+        this.salary = salary;
     }
 
     public String getLevel() {
@@ -60,33 +61,33 @@ public class Employee {
                 '}';
     }
 
-    public char[] getInfo() {
-        return this.getInfo();
-    }
-
-    public String getIdCard() {
-        return this.getIdCard();
-    }
-
-    public void setDateOfBirth(String dateFormat) {
-    }
-
-    public void setGender(String gender) {
-    }
-
-    public void setId(String upperCaseName) {
-    }
-
-    public void setIdCard(String idCard) {
-    }
-
-    public void setPhone(String phone) {
-    }
-
-    public void setEmail(String email) {
-    }
-
-    public String getId() {
-        return this.getId();
-    }
+//    public char[] getInfo() {
+//        return this.getInfo();
+//    }
+//
+//    public String getIdCard() {
+//        return this.getIdCard();
+//    }
+//
+//    public void setDateOfBirth(String dateFormat) {
+//    }
+//
+//    public void setGender(String gender) {
+//    }
+//
+//    public void setId(String upperCaseName) {
+//    }
+//
+//    public void setIdCard(String idCard) {
+//    }
+//
+//    public void setPhone(String phone) {
+//    }
+//
+//    public void setEmail(String email) {
+//    }
+//
+//    public String getId() {
+//        return this.getId();
+//    }
 }

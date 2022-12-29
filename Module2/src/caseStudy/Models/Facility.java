@@ -1,6 +1,6 @@
 package caseStudy.Models;
 
-public class Facility {
+public abstract class Facility {
     private String serviceId;
     private String serviceName;
     private Double areaUse;

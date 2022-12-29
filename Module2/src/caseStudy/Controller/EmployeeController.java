@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class EmployeeController {
     public void menuEmployeeManagement() {
         Scanner scanner = new Scanner(System.in);
-        IEmployeeService iEmployeeService = new EmployeeService();
+        EmployeeService iEmployeeService = new EmployeeService();
         do {
             System.out.println("\nEmployee Management\n" +
                     "1.Display list employees\n" +
