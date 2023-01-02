@@ -1,3 +1,5 @@
+package ss1.bai_tap;
+
 import java.util.Scanner;
 
 public class Hienthiloichao {

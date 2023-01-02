@@ -1,6 +1,6 @@
 package caseStudy.Models;
 
-public class Employee extends Person{
+public class Employee extends Person {
     private String level;
     private String position;
     private int salary;
@@ -13,6 +13,9 @@ public class Employee extends Person{
         this.level = level;
         this.position = position;
         this.salary = salary;
+    }
+
+    public Employee(String s, String s1, String s2, String s3, String s4, String s5, String s6, String s7, String s8) {
     }
 
     public String getLevel() {
@@ -39,18 +42,8 @@ public class Employee extends Person{
         this.salary = salary;
     }
 
-//    public String getInfo() {
-//        return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n",
-//                this.getId(),
-//                this.getName(),
-//                this.getDateOfBirth(),
-//                this.getGender(),
-//                this.getIdCard(),
-//                this.getPhone(),
-//                this.getEmail(),
-//                this.getLevel(),
-//                this.getPosition(),
-//                this.getSalary());
+
+
 
     @Override
     public String toString() {
@@ -61,33 +54,10 @@ public class Employee extends Person{
                 '}';
     }
 
-//    public char[] getInfo() {
-//        return this.getInfo();
-//    }
-//
-//    public String getIdCard() {
-//        return this.getIdCard();
-//    }
-//
-//    public void setDateOfBirth(String dateFormat) {
-//    }
-//
-//    public void setGender(String gender) {
-//    }
-//
-//    public void setId(String upperCaseName) {
-//    }
-//
-//    public void setIdCard(String idCard) {
-//    }
-//
-//    public void setPhone(String phone) {
-//    }
-//
-//    public void setEmail(String email) {
-//    }
-//
-//    public String getId() {
-//        return this.getId();
-//    }
+    @Override
+    public char[] getInfo() {
+        return new char[0];
+
+    }
+
 }

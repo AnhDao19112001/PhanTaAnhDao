@@ -1,14 +1,18 @@
 package caseStudy.Controller;
 
+import caseStudy.Models.Employee;
 import caseStudy.Services.IEmployeeService;
 import caseStudy.Services.impl.EmployeeService;
+import caseStudy.Utils.ReadWriteEmployeeFileUtil;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class EmployeeController {
     public void menuEmployeeManagement() {
         Scanner scanner = new Scanner(System.in);
         EmployeeService iEmployeeService = new EmployeeService();
+        List<String> stringList= ReadWriteEmployeeFileUtil.readFile("src\\caseStudy\\data\\employee.csv");
         do {
             System.out.println("\nEmployee Management\n" +
                     "1.Display list employees\n" +
@@ -31,6 +35,10 @@ public class EmployeeController {
                     break;
                 case 3:
                     iEmployeeService.edit();
+                    System.out.println("Nhập id: ");
+                    String idEmployee = scanner.nextLine();
+//                    Employee employee = stringList.
+                    System.out.println("");
                     break;
                 case 4:
                     return;
@@ -39,4 +47,5 @@ public class EmployeeController {
             }
         } while (true);
     }
+
 }

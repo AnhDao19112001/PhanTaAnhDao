@@ -19,7 +19,7 @@ public class ReadWriteFacilityFileUtil {
             while ((line = bufferedReader.readLine()) != null) {
                 stringList.add(line);
             }
-
+            bufferedReader.close();
             //bufferedReader.close();
         } catch (IOException e) {
             e.printStackTrace();

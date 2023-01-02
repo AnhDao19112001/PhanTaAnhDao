@@ -90,4 +90,6 @@ public abstract class Person {
                 ", email='" + getEmail() + '\'' +
                 '}';
     }
+
+    public abstract char[] getInfo();
 }

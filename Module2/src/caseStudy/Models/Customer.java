@@ -30,21 +30,6 @@ public class Customer extends Person{
         this.address = address;
     }
 
-    //    public String getInfo(){
-//        return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s\\n",
-//                this.getId(),
-//                this.getId(),
-//                this.getName(),
-//                this.getDateOfBirth(),
-//                this.getGender(),
-//                this.getIdCard(),
-//                this.getPhone(),
-//                this.getEmail(),
-//                this.getCustomerType(),
-//                this.getAddress());
-//
-//        )
-//    }
 
     @Override
     public String toString() {
@@ -53,17 +38,11 @@ public class Customer extends Person{
                 ", address='" + getAddress() + '\'' +
                 '}';
     }
-//
-//    public char[] getInfo() {
-//        return this.getInfo();
-//    }
-//
-//    public String getId() {
-//        return this.getId();
-//    }
-//
-//    public void getIdCard() {
-//        this.getIdCard();
-//    }
+
+    @Override
+    public char[] getInfo() {
+        return new char[0];
+    }
+
 }
 

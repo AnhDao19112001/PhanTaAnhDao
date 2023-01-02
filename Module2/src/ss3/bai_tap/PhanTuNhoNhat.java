@@ -1,5 +1,5 @@
 package ss3.bai_tap;
-import java.util.Scanner;
+
 public class PhanTuNhoNhat {
         public static void main(String[] args) {
 

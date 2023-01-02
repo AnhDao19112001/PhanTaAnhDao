@@ -13,7 +13,7 @@ public class TimPhanTuLonNhat {
         n = scanner.nextInt();
 
         // khai báo ma trận A có m dòng, n cột
-        int A[][] = new int[m][n];
+        int[][] A = new int[m][n];
 
         System.out.println("Nhập các phần tử cho ma trận: ");
         for (int i = 0; i < m; i++) {

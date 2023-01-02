@@ -1,5 +1,7 @@
 package caseStudy.Services;
 
+import caseStudy.Models.Employee;
+
 public interface IEmployeeService {
 
     void display();
@@ -7,4 +9,6 @@ public interface IEmployeeService {
     void add();
 
     void edit();
+
+    Employee findID(String id);
 }

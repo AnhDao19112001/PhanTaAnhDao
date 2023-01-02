@@ -13,6 +13,15 @@ import java.util.*;
 import java.util.zip.DataFormatException;
 
 public class BookingService implements IBookingService {
+    @Override
+    public void addBooking() {
+
+    }
+
+    @Override
+    public void displayBooking() {
+
+    }
 //    private static final Scanner sca = new Scanner(System.in);
 //    private Object link;
 

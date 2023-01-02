@@ -1,6 +1,5 @@
 package ss3.bai_tap;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -9,9 +8,7 @@ public class Matrix {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap do dai cua dong va cot (dong = cot): ");
         int row = Integer.parseInt(sc.nextLine());
-//        System.out.println("Nhap do dai cua cot");
-//        int col = Integer.parseInt(sc.nextLine());
-        int arr[][] = new int[row][row];
+        int[][] arr = new int[row][row];
         int sum = 0;
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < row; j++) {

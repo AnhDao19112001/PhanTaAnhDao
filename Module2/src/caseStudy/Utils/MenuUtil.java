@@ -147,7 +147,7 @@ public class MenuUtil {
         } while (true);
     }
 
-    public static String getPosition() {
-        return this.getPositing();
-    }
+//    public static String getPosition() {
+//        return this.getPositing();
+//    }
 }

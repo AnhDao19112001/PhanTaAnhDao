@@ -21,7 +21,7 @@ public class ReadWriteContractFileUtil {
                 stringList.add(line);
             }
 
-//            bufferedReader.close();
+           bufferedReader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
