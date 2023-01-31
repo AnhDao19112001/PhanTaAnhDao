@@ -1,9 +1,8 @@
 package ss17.bai_tap.read_write_binary_file.controller;
 
-import ss12.bai_tap.ArrayList.Product.Model.Product;
+import ss12.bai_tap.ArrayList.Model.Product;
 import ss17.bai_tap.read_write_binary_file.service.IProductService;
 import ss17.bai_tap.read_write_binary_file.service.impl.ProductService;
-import ss17.bai_tap.read_write_binary_file.utils.ReadWriteProductFileUtil;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -3,7 +3,6 @@ package ss17.bai_tap.read_write_binary_file.utils;
 import ss17.bai_tap.read_write_binary_file.model.Product;
 
 import java.io.*;
-import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,5 +42,10 @@ public class ReadWriteProductFileUtil {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static List<String> readFile(String s) {
+
+        return null;
     }
 }

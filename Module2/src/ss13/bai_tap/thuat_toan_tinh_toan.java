@@ -30,6 +30,6 @@ public class thuat_toan_tinh_toan {
         System.out.println("Nhập số cần tìm trong mảng: ");
         int numb = Integer.parseInt(scanner.nextLine());
         Arrays.sort(arr);
-        System.out.println("Thứ tuwk của số cần tìm trong mảng "+ binarySearch(arr,numb,arr.length-1,0));
+        System.out.println("Thứ tự của số cần tìm trong mảng "+ binarySearch(arr,numb,arr.length-1,0));
     }
 }

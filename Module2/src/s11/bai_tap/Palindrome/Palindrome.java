@@ -22,7 +22,6 @@ public class Palindrome {
             String stackChar = elementStack.pop();
             if (!queueChar.equals(stackChar)) {
                 flag = false;
-
                 break;
             }
         }

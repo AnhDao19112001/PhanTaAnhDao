@@ -1,29 +1,24 @@
-import java.util.Arrays;
 import java.util.Scanner;
-import java.util.TreeSet;
 
 public class test {
     public static void main(String[] args) {
-        String chuoi;
-        char kyTu = 0;
-        int count = 0;
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Nhập vào chuỗi bất kỳ: ");
-        chuoi = scanner.nextLine();
-
-        // duyệt từ đầu đến cuối chuỗi
-        for (int i = 0; i < chuoi.length(); i++) {
-            // Nếu ký tự tại vị trí thứ i bằng 'a' thì tăng count lên 1
-            if (chuoi.charAt(i) == kyTu) {
-                count++;
+        int primeNumb = 1;
+        System.out.println("Nhập n: ");
+        int n = scanner.nextInt();
+        while (primeNumb < n) {
+            int count = 0;
+            for (int i = 1; i <= primeNumb; i++) {
+                if (primeNumb % i == 0) {
+                    count++;
+                }
             }
+            if (count == 2) {
+                System.out.println(primeNumb);
+            }
+            primeNumb++;
         }
-
-        System.out.println("Số lần xuất hiện của ký tự " + kyTu +
-                " trong chuỗi " + chuoi + " = " + count);
     }
-
-    }
+}
 
 
