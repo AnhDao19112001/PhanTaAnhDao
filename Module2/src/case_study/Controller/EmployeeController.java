@@ -10,7 +10,6 @@ public class EmployeeController {
     public void menuEmployeeManagement() {
         Scanner scanner = new Scanner(System.in);
         EmployeeService iEmployeeService = new EmployeeService();
-        //List<String> stringList= ReadWriteEmployeeFileUtil.readFile("src\\caseStudy\\data\\employee.csv");
         do {
             System.out.println("\nEmployee Management\n" +
                     "1.Display list employees\n" +

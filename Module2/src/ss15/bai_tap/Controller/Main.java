@@ -5,7 +5,6 @@ import ss15.bai_tap.exception.IllegalRightTriangleException;
 import java.util.Scanner;
 
 public class Main {
-
     public Main(double firstEdge, double secondEdge, double thirdEdge) throws IllegalRightTriangleException {
         if (firstEdge <= 0 || secondEdge <= 0 || thirdEdge <= 0) {
             throw new IllegalRightTriangleException("Cạnh của tam giác phải > 0");
