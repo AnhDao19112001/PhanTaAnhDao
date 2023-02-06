@@ -4,12 +4,22 @@ import java.util.Scanner;
 
 public class Chuyendoitiente {
     public static void main(String[] args) {
-        double vnd = 23000;
-        double usd;
-        Scanner sc = new Scanner(System.in);
-        System.out.print("moi ban nhap so tien usd: ");
-        usd = sc.nextDouble();
-        double quydoi = usd*23000;
-        System.out.println("gia tri vnd: " + quydoi);
+        Scanner scaner = new Scanner(System.in);
+        System.out.println("Nhập n: ");
+        int n= scaner.nextInt();
+        int primeNumb = 1;
+
+        while (primeNumb < n) {
+            int count = 0;
+            for (int i=1; i<=primeNumb; i++) {
+                if (primeNumb%i==0) {
+                    count++;
+                }
+            }
+            if (count==2) {
+                System.out.println(primeNumb);
+            }
+            primeNumb++;
+        }
     }
 }

@@ -11,10 +11,9 @@ import java.util.List;
 public class WriteFileEmployee {
     public static void writeFile(String path, List<EmployeeModel> list){
         File file = new File(path);
-        FileWriter fileWriter = null;
         BufferedWriter bufferedWriter = null;
         try {
-            fileWriter = new FileWriter(file);
+            FileWriter fileWriter = new FileWriter(file);
             bufferedWriter = new BufferedWriter(fileWriter);
             for (EmployeeModel employee: list) {
                 bufferedWriter.write(employee.convertLine());
@@ -26,7 +25,6 @@ public class WriteFileEmployee {
         }finally {
             try {
                 bufferedWriter.close();
-                fileWriter.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }

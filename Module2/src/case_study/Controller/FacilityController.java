@@ -29,6 +29,8 @@ public class FacilityController {
                     break;
                 case 4:
                     return;
+                default:
+                    System.out.println("Lựa chọn của bạn không có vui lòng nhập lại!");
             }
         }while (true);
     }
@@ -50,6 +52,8 @@ public class FacilityController {
                 break;
             case 4:
                 return;
+            default:
+                System.out.println("Lựa chọn của bạn không có vui lòng nhập lại!");
         }
     }
 }

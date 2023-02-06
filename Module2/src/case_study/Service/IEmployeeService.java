@@ -5,6 +5,6 @@ public interface IEmployeeService {
 
     void add();
     void delete();
-    void edit(String id);
+    void edit();
 
 }

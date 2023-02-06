@@ -1,6 +1,6 @@
 package case_study.Model;
 
-public class Person {
+public abstract class Person {
     private String name;
     private String dOB;
     private String gender;
@@ -8,10 +8,10 @@ public class Person {
     private String phoneNumber;
     private String email;
 
-    public Person() {
+    protected Person() {
     }
 
-    public Person(String name, String dOB,
+    protected Person(String name, String dOB,
                   String gender, String idCard,
                   String phoneNumber, String email) {
         this.name = name;
@@ -83,6 +83,6 @@ public class Person {
     }
     public String convertLine(){
         String COMMA = ",";
-        return this.name + COMMA + this.dOB + COMMA + this.gender + COMMA + this.idCard + COMMA + this.phoneNumber + COMMA + this.email;
+        return this.name + COMMA + this.dOB + COMMA + this.gender + COMMA + this.idCard + COMMA + this.phoneNumber + COMMA + this.email ;
     }
 }

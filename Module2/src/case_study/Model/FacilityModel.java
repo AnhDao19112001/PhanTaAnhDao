@@ -1,6 +1,6 @@
 package case_study.Model;
 
-public class FacilityModel {
+public abstract class FacilityModel {
     private String id;
     private String name;
     private double area;
@@ -8,10 +8,10 @@ public class FacilityModel {
     private String amount;
     private String rentalType;
 
-    public FacilityModel() {
+    protected FacilityModel() {
     }
 
-    public FacilityModel(String id, String name,
+    protected FacilityModel(String id, String name,
                          double area, double costs,
                          String amount, String rentalType) {
         this.id = id;

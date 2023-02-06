@@ -44,7 +44,7 @@ public class Villa extends FacilityModel{
 
     @Override
     public String toString() {
-        return "Villa{" +
+        return "Villa{" + super.toString() +
                 "room='" + room + '\'' +
                 ", poolArea=" + poolArea +
                 ", numberOfFloors='" + numberOfFloors + '\'' +

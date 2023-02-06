@@ -3,8 +3,8 @@ package case_study.Utils.Exception;
 import java.util.Scanner;
 
 public class ExceptionHandling {
-    private final Scanner scanner = new Scanner(System.in);
-    public int enterInteger(){
+    private static Scanner scanner = new Scanner(System.in);
+    public static int enterInteger(){
         int number;
         do {
             try {

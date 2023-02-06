@@ -45,13 +45,13 @@ public class CustomerModel extends Person{
     @Override
     public String toString() {
         return "CustomerModel{" +
-                "customerCode='" + customerCode + '\'' +
+                "customerCode='" + customerCode + super.toString() +'\'' +
                 ", typeOfGuest='" + typeOfGuest + '\'' +
                 ", address='" + address + '\'' +
                 '}';
     }
     public String convertLine(){
         String COMMA = ",";
-        return this.customerCode + COMMA + this.typeOfGuest + COMMA + this.address;
+        return super.convertLine() + COMMA + this.customerCode + COMMA + this.typeOfGuest + COMMA + this.address ;
     }
 }

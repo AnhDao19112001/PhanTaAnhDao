@@ -10,8 +10,8 @@ public class ReadNganHang {
     public static List<NganHangModel> readFile(String path) {
         List<NganHangModel> sinhVienModelList = new ArrayList<>();
         File file = new File(path);
+        BufferedReader bufferedReader = null;
         if (file.exists()) {
-            BufferedReader bufferedReader = null;
             try {
                 FileReader fileReader = new FileReader(file);
                 bufferedReader = new BufferedReader(fileReader);
