@@ -5,33 +5,18 @@
     <title>Title</title>
 </head>
 <body>
+<div id="bai6"></div>
 <script>
-     // c1
-       let a = new Array(10);
-    // for(let i = 0; i< a.length; i++);{
-       a[i] = +prompt('nhap vao a[${i}]:');
-    // }
-       let v = +prompt('Input v : ');
-    // if (a.indexOf(v)!== -1) {
-    //     console.log('V is array...');
-    // }else{
-    //     console.log('V is not array');
-   //}
-         // hoac muon ngan hon ta co the dung toan tu 3 ngoi
-        //console.log(a.indexOf(v) !== -1 ? 'V is array...' : 'V is not array');
-    //c2
-    let flag = false;
-    for(let i=0; i< a.length; i++){
-    if (v == a[i]){
-        flag = true;
-        break;
+    let i;
+    let arr = []
+    let find;
+    for (i = 1; i <= 10; i++) {
+        arr[i] = prompt('Nhập số trong chuỗi thứ ' + i)
     }
-     }
-    if (flag){
-        console.log('V is array...');
-    }else {
-        console.log('V is not array');
-    }
+    let v = +prompt('Nhập số bạn muốn tìm: ')
+    find = arr.indexOf(v.toString())
+    if (find > -1) document.getElementById('bai6').innerHTML = v + ' is in the array'
+    else document.getElementById('bai6').innerHTML = v + ' is not in the array'
 </script>
 </body>
 </html>

@@ -33,3 +33,17 @@
             }
         }
     }
+// function doThis() {
+//     let n = +prompt('Bạn muốn dự đoán giới hạn bao nhiêu: ');
+//     let e=Math.floor(Math.random()*n);
+//     for (let i=1;i<=3; i++){
+//         let k=+prompt('Bạn dự đoán số: ')
+//         if (e== k) {
+//             alert('Bạn dự đoán đúng. Chúc mừng')
+//             break;
+//         } else if (i<3) {
+//             if (k <e) alert('Số cần tìm lớn hơn. Mời dự đoán lại');
+//             else if (k>e) alert('Số cần tìm nhỏ hơn. Mời dự đoán lại');
+//         } else if (i>=3) alert('Bạn đã hết lượt');
+//     }
+// }

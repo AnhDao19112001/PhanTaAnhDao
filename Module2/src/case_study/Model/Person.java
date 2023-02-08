@@ -83,6 +83,7 @@ public abstract class Person {
     }
     public String convertLine(){
         String COMMA = ",";
-        return this.name + COMMA + this.dOB + COMMA + this.gender + COMMA + this.idCard + COMMA + this.phoneNumber + COMMA + this.email ;
+        return this.name + COMMA + this.dOB + COMMA + this.gender + COMMA + this.idCard + COMMA + this.phoneNumber + COMMA + this.email
+                ;
     }
 }

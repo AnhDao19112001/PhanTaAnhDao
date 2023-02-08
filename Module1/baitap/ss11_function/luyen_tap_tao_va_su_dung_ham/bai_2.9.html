@@ -6,21 +6,27 @@
 </head>
 <body>
 <script>
-    let str1 =[];
-    let length=+prompt("chiều dài mảng ký tự")
-    for (let i=0;i<length;i++){
-        str1[i]=prompt("Nhập kí tự"+'['+i+']')
-    function result(a,b) {
-        if (a.indexOf(b) != -1){
-            return a.indexOf(b)
+    let length = prompt('Nhap do dai mang');
+    let arr = [];
+    let kiTu = prompt('Nhap ky tu');
+    let dem = 0;
+
+    function kiemTra() {
+        for (let i = 0; i < length; i++) {
+            arr[i] = prompt('Nhap phan tu thu ' + i);
+            if (kiTu == arr[i]) {
+                dem++;
+            }
         }
-        else {
-            return -1
+        if (dem == 0) {
+            return -1;
+        } else {
+            return 'Co ' + dem + ' lan xuat hien';
         }
+
     }
-    }
-    let str =prompt("nhập ký tự")
-    alert(result(str1,str))
+
+    document.write(kiemTra());
 </script>
 </body>
 </html>

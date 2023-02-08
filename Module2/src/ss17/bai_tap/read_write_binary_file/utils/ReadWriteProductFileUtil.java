@@ -24,7 +24,8 @@ public class ReadWriteProductFileUtil {
                 productList = (List<Product>) object.readObject();
             }
            if(object != null){
-               object.close();           }
+               object.close();
+           }
         } catch (Exception e) {
             e.printStackTrace();
         }finally {

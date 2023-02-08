@@ -6,24 +6,20 @@
 </head>
 <body>
 <script>
-    let x = +prompt("Nhập số a");
-    let y = +prompt("Nhập số b");
-    let z = +prompt("Nhập số c");
-    let t = +prompt("Nhập số d");
-    // function doicho(a,b) {
-    //     let temp = a;
-    //     a = b;
-    //     b = temp;
-    //     alert("Số a và b hiện tại lần lượt là: "+a+" và "+b)
+    // let x = +prompt("Nhập số a");
+    // let y = +prompt("Nhập số b");
+    // function doiCho(a, b) {
+    //     return [b, a]
     // }
-    // doicho(x,y);
-
-    function doiCho(a, b) {
-        return [b, a]
+    //
+    // let arr = doiCho(x, y);
+    // document.write('so a= ' + arr[0] + 'so b= ' + arr[1]);
+    function doiCho(a,b) {
+        return ([a,b]=[b,a]);
     }
-
-    let arr = doiCho(x, y);
-    document.write('so a= ' + arr[0] + 'so b= ' + arr[1]);
+    let x = +prompt('Nhap so thu nhat: ');
+    let y = +prompt('Nhap so thu hai: ')
+    document.write('Sau khi doi cho '+ doiCho(x,y));
 </script>
 </body>
 </html>

@@ -6,19 +6,33 @@
 </head>
 <body>
 <script>
-    let numb = +prompt('Nhập số bất kì')
-    let count = 0
-    for(let i = 1; i<=numb; i++) {
-        if (numb % i == 0) {
-            count++
+    let number = +prompt('Nhập số cần kiểm tra ');
+     isPrime(number)
+
+    function isPrime(number) {
+       let isPrime = true;
+
+        if (number < 2) {
+            alert(number + " không là số nguyên tố");
+            isPrime = false;
+        } else {
+            for (let i = 2; i <= number; i++) {
+                if (number % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            return isPrime;
         }
     }
-    if (count == 2) {
-        document.write('Là số nguyên tố')
-    } else {
-        document.write('Không phải là số nguyên tố')
-    }
+    let count = '';
 
+    for (i = 2 ; i<number; i++){
+        if (isPrime(i)){
+            count=count+i;
+        }
+    }
+    document.write(count);
 </script>
 </body>
 </html>

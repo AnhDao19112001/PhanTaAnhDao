@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<div id="3"></div>
+
 <script>
     let n = +prompt('nhap so phan tu ban muon: ');
     let numerator = [];
@@ -20,7 +20,9 @@
         if ((+numerator[i]) / (+denominator[i]) > max)
             max = (+numerator[i]) / (+denominator[i])
     }
-    document.getElementById('3').innerHTML = 'Chi so lon nhat : ' + Math.ceil(max);
+    document.write('Chi so lon nhat : ' + Math.ceil(max)+'<br>');
+    document.write(numerator+'<br>');
+    document.write(denominator+'<br>');
 </script>
 </body>
 </html>

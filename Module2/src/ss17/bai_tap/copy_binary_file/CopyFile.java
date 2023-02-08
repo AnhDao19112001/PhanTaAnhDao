@@ -34,7 +34,7 @@ public class CopyFile {
         try {
             File sourceFile = new File(sourcePath);
             File targetFile = new File(targetPath);
-            if (targetFile.exists()){
+            if (sourceFile.exists()){
                 throw new ExistsException("File đích đã tồn tại, hãy kiểm tra lại!");
             }
             copyFileUsingStream(sourceFile, targetFile);

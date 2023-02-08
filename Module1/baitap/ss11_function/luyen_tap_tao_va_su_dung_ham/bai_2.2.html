@@ -2,23 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bài 2</title>
 </head>
-<label>Nhập bán kính r:</label>
-<input type="text" id="r" oninput="tinh()">
-<p>Chu vi là:</p>
-<p id="chuVi"></p>
-<p>Diện tích là:</p>
-<p id="dienTich"></p>
 <body>
+<div id="bai2"></div>
 <script>
-    function tinh() {
-     let r= document.getElementById('r').value;
-     cv= 2*r*3.14
-     dt= r*r*3.15
-     document.getElementById('chuVi').innerHTML=cv
-     document.getElementById('dienTich') .innerHTML=dt
+    function diameterCircle(r) {
+        return Math.PI * 2 * r;
     }
+
+    function areaCircle(r) {
+        return Math.pow(r, 2) * Math.PI;
+    }
+
+    let r = +prompt('Nhập bán kính hình tròn: ');
+    document.getElementById('bai2').innerHTML = 'Chu vi hình tròn là: ' + diameterCircle(r) + '<br> Diện tích hình tròn là: ' + areaCircle(r);
 </script>
 </body>
 </html>
