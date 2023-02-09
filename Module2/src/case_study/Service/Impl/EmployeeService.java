@@ -4,6 +4,8 @@ import case_study.Model.EmployeeModel;
 import case_study.Service.IEmployeeService;
 import case_study.Utils.ReadFile.ReadFileEmployee;
 import case_study.Utils.WriteFile.WriteFileEmployee;
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -77,7 +79,7 @@ public class EmployeeService implements IEmployeeService {
         System.out.println("Nhập mã nhân viên muốn sửa: ");
         String id1 = scanner.nextLine();
         for (EmployeeModel employee: employeeModels1) {
-            if (employee.getEmployeeCode() == id1){
+            if (employee.getEmployeeCode().equals(id1)){
                 System.out.println("Nhập lại mã nhân viên mới: ");
                 employee.setEmployeeCode(scanner.nextLine());
                 System.out.println("Nhập lại tên: ");
@@ -99,10 +101,10 @@ public class EmployeeService implements IEmployeeService {
                 System.out.println("Nhập lương: ");
                 employee.setWage(scanner.nextLine());
                 writeFile(employeeModels1);
-                return;
+                break;
             }
         }
-        System.out.println("Không tìm thấy mã nhân viên!");
+        System.out.println("no");
     }
 }
 

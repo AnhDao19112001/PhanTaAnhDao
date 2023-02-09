@@ -57,7 +57,7 @@ public class CustomerService implements ICustomerService {
         System.out.println("Nhập vào mã khách hàng muốn sửa:");
         String id = scanner.nextLine();
         for (CustomerModel customer : customers) {
-            if (customer.getCustomerCode() == id) {
+            if (customer.getCustomerCode().equals(id)) {
                 System.out.println("Nhập lại mã khách hàng mới: ");
                 customer.setCustomerCode(scanner.nextLine());
                 System.out.println("Nhập lại họ tên khách hàng mới: ");
@@ -77,9 +77,10 @@ public class CustomerService implements ICustomerService {
                 System.out.println("Nhập lại địa chỉ khách hàng mới: ");
                 customer.setAddress(scanner.nextLine());
                 writeFile(customers);
-                return;
+                System.out.println("Đã thêm thành công!");
+                break;
             }
         }
-        System.out.println("Không tìm thấy mã khách hàng:");
+
     }
 }
