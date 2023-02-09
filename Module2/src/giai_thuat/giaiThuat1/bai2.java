@@ -18,6 +18,7 @@ public class bai2 {
             }
             i++;
         }
+//        System.out.println(i);
         System.out.println(sum);
     }
 }
