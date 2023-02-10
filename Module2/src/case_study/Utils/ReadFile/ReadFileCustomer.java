@@ -35,7 +35,7 @@ public class ReadFileCustomer {
                 e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
-            }finally {
+            } finally {
                 try {
                     bufferedReader.close();
                 } catch (IOException e) {
