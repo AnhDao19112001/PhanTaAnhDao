@@ -15,6 +15,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class FacilityService implements IFacilityService {
+    private Regex regex = new Regex();
     Scanner scanner = new Scanner(System.in);
     final String PATH_ROOM = "D:\\Codegym\\Module2\\src\\case_study\\data\\room.csv";
     final String PATH_VILLA = "D:\\Codegym\\Module2\\src\\case_study\\data\\villa.csv";
@@ -81,7 +82,7 @@ public class FacilityService implements IFacilityService {
         System.out.println("Mã dịch vụ:");
         villa.setId(scanner.nextLine());
         System.out.println("Tên dịch vụ :");
-        villa.setName(Regex.REGEX_VILLA);
+        villa.setName(regex.REGEX_VILLA);
         System.out.println("Diện tích sử dụng :");
         villa.setArea(Double.parseDouble(scanner.nextLine()));
         System.out.println("Chi phí thuê :");
