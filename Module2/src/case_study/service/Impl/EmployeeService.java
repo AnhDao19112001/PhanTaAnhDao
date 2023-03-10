@@ -1,10 +1,9 @@
-package case_study.Service.Impl;
+package case_study.service.Impl;
 
-import case_study.Model.EmployeeModel;
-import case_study.Service.IEmployeeService;
-import case_study.Utils.ReadFile.ReadFileEmployee;
-import case_study.Utils.WriteFile.WriteFileEmployee;
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+import case_study.model.EmployeeModel;
+import case_study.service.IEmployeeService;
+import case_study.utils.readFile.ReadFileEmployee;
+import case_study.utils.writeFile.WriteFileEmployee;
 
 import java.util.List;
 import java.util.Scanner;
@@ -58,19 +57,24 @@ public class EmployeeService implements IEmployeeService {
     List<EmployeeModel> employeeModels = ReadFileEmployee.readFileEmployee(PATH_EMPLOYEE);
         System.out.println("Nhập mã cần xóa: ");
         String id = scanner.nextLine();
-        EmployeeModel employeeModel1 = null;
-        for (EmployeeModel employee: employeeModels) {
-            if (employee.getEmployeeCode() == id){
-                employeeModel1 = employee;
-                break;
+//        EmployeeModel employeeModel1 = null;
+        for (int i=0; i<employeeModels.size(); i++){
+            if (employeeModels.get(i).getEmployeeCode().equals(id)) {
+                employeeModels.remove(employeeModels.get(i));
+                System.out.println("Xóa thành công!");
+                writeFile(employeeModels);
+                return;
             }
         }
-        if (employeeModel1 != null){
-            employeeModels.remove(employeeModel1);
-            System.out.println("Xóa thành công!");
-            writeFile(employeeModels);
-        }
         System.out.println("Không tìm thấy mã nhân viên!");
+//        if (employeeModel1 != null){
+//            employeeModels.remove(employeeModel1);
+//            System.out.println("Xóa thành công!");
+//            writeFile(employeeModels);
+//        }else {
+//            System.out.println("Không tìm thấy mã nhân viên!");
+//        }
+
     }
 
     @Override

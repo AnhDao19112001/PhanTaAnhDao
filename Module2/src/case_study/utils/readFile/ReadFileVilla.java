@@ -1,6 +1,6 @@
-package case_study.Utils.ReadFile;
+package case_study.utils.readFile;
 
-import case_study.Model.Villa;
+import case_study.model.Villa;
 
 import java.io.*;
 import java.util.LinkedHashMap;

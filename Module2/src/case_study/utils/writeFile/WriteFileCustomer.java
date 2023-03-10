@@ -1,6 +1,6 @@
-package case_study.Utils.WriteFile;
+package case_study.utils.writeFile;
 
-import case_study.Model.CustomerModel;
+import case_study.model.CustomerModel;
 
 import java.io.BufferedWriter;
 import java.io.File;

@@ -1,7 +1,7 @@
-package case_study.Controller;
+package case_study.controller;
 
-import case_study.Service.ICustomerService;
-import case_study.Service.Impl.CustomerService;
+import case_study.service.ICustomerService;
+import case_study.service.Impl.CustomerService;
 
 import java.util.Scanner;
 

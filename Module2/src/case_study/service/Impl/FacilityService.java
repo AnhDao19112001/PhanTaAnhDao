@@ -1,14 +1,14 @@
-package case_study.Service.Impl;
+package case_study.service.Impl;
 
-import case_study.Model.FacilityModel;
-import case_study.Model.Room;
-import case_study.Model.Villa;
-import case_study.Service.IFacilityService;
-import case_study.Utils.ReadFile.ReadFileRoom;
-import case_study.Utils.ReadFile.ReadFileVilla;
-import case_study.Utils.Regex.Regex;
-import case_study.Utils.WriteFile.WriteFileRoom;
-import case_study.Utils.WriteFile.WriteFileVilla;
+import case_study.model.FacilityModel;
+import case_study.model.Room;
+import case_study.model.Villa;
+import case_study.service.IFacilityService;
+import case_study.utils.readFile.ReadFileRoom;
+import case_study.utils.readFile.ReadFileVilla;
+import case_study.utils.regex.Regex;
+import case_study.utils.writeFile.WriteFileRoom;
+import case_study.utils.writeFile.WriteFileVilla;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -59,13 +59,13 @@ public class FacilityService implements IFacilityService {
         System.out.println("mã dịch vụ:");
         room.setId(scanner.nextLine());
         System.out.println("Tên dịch vụ:");
-        room.setName(Regex.REGEX_ROOM);
+        room.setName(scanner.nextLine());
         System.out.println("Diện tích sử dụng:");
         room.setArea(Double.parseDouble(scanner.nextLine()));
         System.out.println("Chi phí thuê:");
         room.setCosts(Double.parseDouble(scanner.nextLine()));
         System.out.println("Số lượng người tối đa:");
-        room.setAmount(Regex.REGEX_MAX_PEOPLE);
+        room.setAmount(scanner.nextLine());
         System.out.println("Kiểu thuê:");
         room.setRentalType(scanner.nextLine());
         System.out.println("Dịch vụ miễn phí đi kèm: ");
@@ -82,13 +82,13 @@ public class FacilityService implements IFacilityService {
         System.out.println("Mã dịch vụ:");
         villa.setId(scanner.nextLine());
         System.out.println("Tên dịch vụ :");
-        villa.setName(regex.REGEX_VILLA);
+        villa.setName(scanner.nextLine());
         System.out.println("Diện tích sử dụng :");
         villa.setArea(Double.parseDouble(scanner.nextLine()));
         System.out.println("Chi phí thuê :");
         villa.setCosts(Double.parseDouble(scanner.nextLine()));
         System.out.println("Số lượng người tối đa:");
-        villa.setAmount(Regex.REGEX_MAX_PEOPLE);
+        villa.setAmount(scanner.nextLine());
         System.out.println("Kiểu thuê:");
         villa.setRentalType(scanner.nextLine());
         System.out.println("Tiêu chuẩn phòng:");
@@ -96,7 +96,7 @@ public class FacilityService implements IFacilityService {
         System.out.println("Diện tích hồ bơi:");
         villa.setPoolArea(Double.parseDouble(scanner.nextLine()));
         System.out.println("Sô tầng:");
-        villa.setNumberOfFloors(Regex.REGEX_NUMBER_OF_FLOORS);
+        villa.setNumberOfFloors(scanner.nextLine());
         villaIntegerMap.put(villa, 0);
         writeFileVilla(villaIntegerMap);
     }

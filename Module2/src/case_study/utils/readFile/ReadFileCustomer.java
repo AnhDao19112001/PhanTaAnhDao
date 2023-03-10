@@ -1,6 +1,6 @@
-package case_study.Utils.ReadFile;
+package case_study.utils.readFile;
 
-import case_study.Model.CustomerModel;
+import case_study.model.CustomerModel;
 
 import java.io.*;
 import java.util.ArrayList;

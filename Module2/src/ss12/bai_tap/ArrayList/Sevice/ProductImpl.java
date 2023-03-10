@@ -1,6 +1,5 @@
 package ss12.bai_tap.ArrayList.Sevice;
 
-import case_study.Service.IEmployeeService;
 import ss12.bai_tap.ArrayList.Model.Product;
 
 import java.util.ArrayList;

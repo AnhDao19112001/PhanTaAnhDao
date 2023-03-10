@@ -1,6 +1,6 @@
-package case_study.Service.Impl;
+package case_study.service.Impl;
 
-import case_study.Service.IBookingService;
+import case_study.service.IBookingService;
 
 public class BookingService implements IBookingService {
     @Override

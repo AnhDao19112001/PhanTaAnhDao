@@ -1,9 +1,9 @@
-package case_study.Service.Impl;
+package case_study.service.Impl;
 
-import case_study.Model.CustomerModel;
-import case_study.Service.ICustomerService;
-import case_study.Utils.ReadFile.ReadFileCustomer;
-import case_study.Utils.WriteFile.WriteFileCustomer;
+import case_study.model.CustomerModel;
+import case_study.service.ICustomerService;
+import case_study.utils.readFile.ReadFileCustomer;
+import case_study.utils.writeFile.WriteFileCustomer;
 
 import java.util.List;
 import java.util.Scanner;
@@ -72,7 +72,7 @@ public class CustomerService implements ICustomerService {
                 customer.setPhoneNumber(scanner.nextLine());
                 System.out.println("Nhập lại email khách hàng mới: ");
                 customer.setEmail(scanner.nextLine());
-                System.out.println("Nhập lại loại khách hàng mới: ");//thiếu regex
+                System.out.println("Nhập lại loại khách hàng mới: ");
                 customer.setTypeOfGuest(scanner.nextLine());
                 System.out.println("Nhập lại địa chỉ khách hàng mới: ");
                 customer.setAddress(scanner.nextLine());

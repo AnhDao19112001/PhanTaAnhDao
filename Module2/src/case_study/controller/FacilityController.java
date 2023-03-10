@@ -1,7 +1,7 @@
-package case_study.Controller;
+package case_study.controller;
 
-import case_study.Service.IFacilityService;
-import case_study.Service.Impl.FacilityService;
+import case_study.service.IFacilityService;
+import case_study.service.Impl.FacilityService;
 
 import java.util.Scanner;
 

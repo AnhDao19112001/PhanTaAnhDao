@@ -3,7 +3,7 @@ package test;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class soDoiXung {
+public class mangDep {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập length: ");
