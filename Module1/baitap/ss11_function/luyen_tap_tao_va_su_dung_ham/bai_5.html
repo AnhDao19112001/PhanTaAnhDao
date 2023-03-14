@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Nhập ngôi sao:</label>
+<input type="text" id="star">
+<button type="button" onclick="add()">Result</button>
+<p id="p"></p>
+<script>
+    function add() {
+        let a = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let b = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        let star = document.getElementById('star').value;
+        let i = a.indexOf(star);
+        if (i == -1) return document.getElementById('p').innerHTML = 'Không tìm thấy';
+        return document.getElementById('p').innerHTML = star + ' thuộc chòm sao ' + b[i];
+    }
+</script>
+</body>
+</html>

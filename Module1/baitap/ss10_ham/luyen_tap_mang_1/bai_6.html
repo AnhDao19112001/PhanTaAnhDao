@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="bai6"></div>
+<script>
+    let i;
+    let arr = []
+    let find;
+    for (i = 1; i <= 10; i++) {
+        arr[i] = prompt('Nhập số trong chuỗi thứ ' + i)
+    }
+    let v = +prompt('Nhập số bạn muốn tìm: ')
+    find = arr.indexOf(v.toString())
+    if (find > -1) document.getElementById('bai6').innerHTML = v + ' is in the array'
+    else document.getElementById('bai6').innerHTML = v + ' is not in the array'
+</script>
+</body>
+</html>

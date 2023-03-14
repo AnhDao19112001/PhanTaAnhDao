@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="bai3"></div>
+<script>
+    let i;
+    let a = [];
+    let dem=0;
+    let max;
+    for (i=1; i<=10; i++){
+        a[i]= +prompt('nhap so thu ' + i);
+        if(i==1 )
+            max=+a[1];
+        if(+a[i] > max)
+            max = +a[i]
+        dem+=+a[i]
+    }
+    document.getElementById('bai3').innerHTML='So lon nhat: '+max+', trung binh cong: '+dem/10;
+
+</script>
+</body>
+</html>

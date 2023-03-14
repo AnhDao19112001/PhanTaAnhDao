@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function titleCase(str) {
+        let a = str.toLowerCase().split(' '); // viet thuong
+        for (let i = 0; i < a.length; i++) {
+            a[i] = a[i].charAt(0).toUpperCase() + a[i].substring(1); // chon 1 mang va viet hoa gia tri dau
+
+        }
+        return a.join(' '); // xoa dau cach
+    }
+
+    function max(arr) {
+        let max = arr[0]
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] > max) {
+                arr[j] = max
+            }
+        }
+        return max;
+    }
+
+    let a = prompt('Nhap chuoi muon chuyen doi')
+    document.write(titleCase(a));
+    let arr = titleCase(a).split(' ');
+    document.writeln(max(arr))
+</script>
+</body>
+</html>

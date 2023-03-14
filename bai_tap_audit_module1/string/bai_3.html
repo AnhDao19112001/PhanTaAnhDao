@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="bai3"></div>
+<script>
+    let str1=prompt('Nhap chuoi thu nhat: ');
+    let str2=prompt('Nhap chuoi thu hai: ');
+    let i,j,c;
+    let e=0;
+    let arr1=str1.split('');
+    let arr2=str2.split('');
+    for (i=0;i<arr1.length;i++){
+        c=arr2.indexOf(arr1[i]);
+        if (c>-1){
+            e++;
+            arr2.splice(c,1);
+        }
+    }
+    document.getElementById('bai3').innerHTML='So luong ky tu chung la: '+e;
+</script>
+</body>
+</html>

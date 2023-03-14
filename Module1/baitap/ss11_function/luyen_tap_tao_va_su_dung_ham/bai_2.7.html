@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let x = +prompt("Nhập số a");
+    // let y = +prompt("Nhập số b");
+    // function doiCho(a, b) {
+    //     return [b, a]
+    // }
+    //
+    // let arr = doiCho(x, y);
+    // document.write('so a= ' + arr[0] + 'so b= ' + arr[1]);
+    function doiCho(a,b) {
+        return ([a,b]=[b,a]);
+    }
+    let x = +prompt('Nhap so thu nhat: ');
+    let y = +prompt('Nhap so thu hai: ')
+    document.write('Sau khi doi cho '+ doiCho(x,y));
+</script>
+</body>
+</html>

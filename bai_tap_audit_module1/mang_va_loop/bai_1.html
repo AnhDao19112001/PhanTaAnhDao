@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="bai1"></div>
+<script>
+    let n = +prompt('Số phần tử bạn muốn nhập: ');
+    let arr = [];
+    let arr2 = [];
+    let e = 0;
+
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt('Nhập phần tử thứ ' + i)
+    }
+    for (i = 0; i < n; i++) {
+        for (let j = 0; j <= i; j++) {
+            e += +arr[j]
+        }
+        arr2.push(e);
+        e = 0;
+    }
+    document.getElementById('bai1').innerHTML = 'Prefix sums: [' + arr2 + ']';
+</script>
+</body>
+</html>

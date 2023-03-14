@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = prompt('Số phần tử bạn muốn kiểm tra: ');
+    let arr = [];
+    let dem = 0;
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt('Nhập ký tự thứ ' + i);
+        if (isFinite(arr[i])){
+            dem++;
+        }
+    }
+    document.write('Chuỗi vừa nhập: ' +arr
+        +'<br>');
+
+    document
+        .write('Số ký tự số trong mảng: ' +
+            dem
+            + '<br>');
+</script>
+</body>
+</html>
