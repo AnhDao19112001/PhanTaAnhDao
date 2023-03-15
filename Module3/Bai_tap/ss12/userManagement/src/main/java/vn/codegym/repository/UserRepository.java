@@ -62,8 +62,8 @@ public class UserRepository implements IUserRepository{
                 user.setCountry(resultSet.getString("country"));
                 userList.add(user);
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
         return userList;
     }

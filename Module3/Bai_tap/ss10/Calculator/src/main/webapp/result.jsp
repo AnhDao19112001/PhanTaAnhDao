@@ -12,29 +12,36 @@
     <title>Result</title>
 </head>
 <body>
-<h3>Result:</h3>
-<c:choose>
-    <c:when test="${param.operator == '+'}">
-        <h4>${param.firstOperand} + ${param.secondOperand} = ${addition}</h4>
-    </c:when>
-
-    <c:when test="${param.operator == '-'}">
-        <h4>${param.firstOperand} - ${param.secondOperand} = ${subtraction}</h4>
-    </c:when>
-
-    <c:when test="${param.operator == '*'}">
-        <h4>${param.firstOperand} * ${param.secondOperand} = ${multiplication}</h4>
-    </c:when>
-
-    <c:when test="${param.operator == '/'}">
-        <c:if test="${param.secondOperand == 0}">
-            <h4>Can't divide by zero!</h4>
-        </c:if>
-
-        <c:if test="${param.secondOperand != 0}">
-            <h4>${param.firstOperand} / ${param.secondOperand} = ${division}</h4>
-        </c:if>
-    </c:when>
-</c:choose>
+<h2>Simple Caculator</h2>
+<form method="get" action="/calculate">
+    <fieldset>
+        <legend>Calculator</legend>
+        <table>
+            <tr>
+                <td>First operand: </td>
+                <td><input name="first-operand" type="text"/></td>
+            </tr>
+            <tr>
+                <td>Operator: </td>
+                <td>
+                    <select name="operator">
+                        <option value="+">Addition</option>
+                        <option value="-">Subtraction</option>
+                        <option value="*">Multiplication</option>
+                        <option value="/">Division</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Second operand: </td>
+                <td><input name="second-operand" type="text"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Calculate"/></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
 </body>
 </html>
