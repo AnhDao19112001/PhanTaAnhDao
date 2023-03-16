@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserRepository implements IUserRepository{
+    private static final String INSERT_USERS_SQL = "insert into users(name, email, country) values(?, ?, ?);";
     private static final String SORT_BY_NAME = "select * from users order by name;";
     private static final String FIND_BY_COUNTRY = "select * from users where country like ?;";
 
@@ -197,6 +198,65 @@ public class UserRepository implements IUserRepository{
 
     @Override
     public void addUserTransaction(User user, int[] permision) {
+        PreparedStatement pstmt = null;
 
+        // for assign permision to user
+        PreparedStatement pstmtAssignment = null;
+
+        // for getting user id
+        ResultSet rs = null;
+        Connection connection = DBRepository.getConnection();
+
+        try {
+            // set auto commit to false
+            connection.setAutoCommit(false);
+
+            // Insert user
+            pstmt = connection.prepareStatement(INSERT_USERS_SQL, Statement.RETURN_GENERATED_KEYS);
+            pstmt.setString(1, user.getName());
+            pstmt.setString(2, user.getEmail());
+            pstmt.setString(3, user.getCountry());
+            int rowAffected = pstmt.executeUpdate();
+
+            // get user id
+            rs = pstmt.getGeneratedKeys();
+            int userId = 0;
+            if (rs.next())
+                userId = rs.getInt(1);
+
+            // in case the insert operation successes, assign permision to user
+            if (rowAffected == 1) {
+
+                // assign permision to user
+                String sqlPivot = "INSERT INTO user_permision(user_id,permision_id) VALUES(?,?)";
+                pstmtAssignment = connection.prepareStatement(sqlPivot);
+                for (int permisionId : permision) {
+                    pstmtAssignment.setInt(1, userId);
+                    pstmtAssignment.setInt(2, permisionId);
+                    pstmtAssignment.executeUpdate();
+                }
+                connection.commit();
+            } else {
+                connection.rollback();
+            }
+        } catch (SQLException ex) {
+            // roll back the transaction
+            try {
+                if (connection != null)
+                    connection.rollback();
+            } catch (SQLException e) {
+                System.out.println(e.getMessage());
+            }
+            System.out.println(ex.getMessage());
+        } finally {
+            try {
+                if (rs != null) rs.close();
+                if (pstmt != null) pstmt.close();
+                if (pstmtAssignment != null) pstmtAssignment.close();
+                if (connection != null) connection.close();
+            } catch (SQLException e) {
+                System.out.println(e.getMessage());
+            }
+        }
     }
 }
