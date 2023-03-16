@@ -44,9 +44,9 @@ public class ProductRepositoryImpl implements IProductRepository {
     @Override
     public List<Product> findByName(String name) {
         List<Product> productList = new ArrayList<>();
-        for (Product item: findAll()) {
+        for (Product item: productList) {
             if (item.getName().contains(name)){
-
+                productList.add(item);
             }
         }
         return productList;

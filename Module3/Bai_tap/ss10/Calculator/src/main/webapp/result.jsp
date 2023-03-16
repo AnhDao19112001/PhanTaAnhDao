@@ -12,7 +12,7 @@
     <title>Result</title>
 </head>
 <body>
-<h2>Simple Caculator</h2>
+<h2>Simple Calculator</h2>
 <form method="get" action="/calculate">
     <fieldset>
         <legend>Calculator</legend>
