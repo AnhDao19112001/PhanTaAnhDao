@@ -11,6 +11,6 @@ public class phuong_trinh_bac_2 {
     }
 
     public static void main(String[] args) {
-        phuongTrinhBac2(1,2,3);
+        phuongTrinhBac2(1,7,3);
     }
 }
