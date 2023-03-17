@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Bai_tap/ss13/goi_mysql_stored_procedures_tu_jdbc/ss1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/case_study_web/case_study_web" vcs="Git" />
   </component>
 </project>
