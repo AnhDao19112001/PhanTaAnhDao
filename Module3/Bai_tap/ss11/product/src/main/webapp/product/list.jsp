@@ -23,7 +23,7 @@
     <button class="btn btn-info btn-sm">+ Thêm sản phẩm mới</button>
 </a></p>
 
-<form action="/product" class="text-center" method="post">
+<form action="/product" class="text-center" method="get">
     <input type="text" name="nameSearch" placeholder="Nhập tên sản phẩm">
     <button type="submit" name="action" value="search" class="btn btn-secondary btn-sm">Tìm kiếm</button>
 </form>
@@ -35,9 +35,6 @@
         <th>Giá</th>
         <th>Mô tả</th>
         <th>Nhà sản xuất</th>
-        <th></th>
-        <th></th>
-        <th></th>
     </tr>
 
     <c:forEach var="product" items="${productList}">
